@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="all" basedir=".">
+    
+	<tstamp>
+		<format property="date" pattern="yyyyMMdd" unit="hour"/>
+		<format property="time" pattern="HHmmss" unit="hour"/>
+ 	</tstamp>
+ 	
+	<property name="ant_commons.target.spacer.start" value="[START]=========================================================================================================="/>
+	<property name="ant_commons.target.spacer.fin"   value="[FIN]  =========================================================================================================="/>
+	
+	<!-- 本プロジェクト設定ファイル読み込み -->
+	<property file="./build_project.properties"/>
+
+	<!-- 本プロジェクト環境設定ファイル読み込み -->
+	<property file="./build_env.properties"/>
+
+	<!-- 本プロジェクトプロパティファイル読み込み -->
+	<property file="./build.properties"/>
+
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] 初期化処理
+		■■     
+		■■     [説明] 以下のプロパティに設定されているディレクトリからjarファイルを検索し、jar一覧をプロパティへ再設定します。
+		■■            
+		■■            ・library.dir     （通常のソースコードが使用するlibを含まれたdir）    → _library.jars
+		■■            ・test.library.dir（テスト用のソースコードが使用するlibを含まれたdir）→ _test.library.jars            
+		■■            
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="init">
+		<path id="_init.path.id">
+	  		<fileset dir="${library.dir}" includes="*.jar"/>
+	  	</path>
+	  	<path id="_init.path.id.test">
+	  		<fileset dir="${library.dir}" includes="*.jar"/>
+	  		<fileset dir="${test.library.dir}" includes="*.jar"/>
+	  	</path>
+		<path id="_init.path.id.aspect">
+	  		<fileset dir="${aspectj_compile.aspectj.lib}" includes="*.jar"/>
+	  	</path>
+	  	<pathconvert property="_library.jars" refid="_init.path.id"/>
+	  	<pathconvert property="_test.library.jars" refid="_init.path.id.test"/>
+		<pathconvert property="_aspect.library.jars" refid="_init.path.id.aspect"/>
+	</target>
+	  
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] ソースコードコンパイル
+		■■     
+		■■     [説明] ソースコードをコンパイルし、指定のビルドディレクトリへ保存します。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="compile" depends="init">
+	  	<delete dir="${compile.delete.dir}" />
+	  	<mkdir dir="${compile.mkdir.dir}" />
+	  	<javac srcdir      = "${compile.javac.srcdir}"
+	           destdir     = "${compile.javac.destdir}"
+	           deprecation = "${compile.javac.deprecation}"
+	           debug       = "${compile.javac.debug}"
+	           encoding    = "${compile.javac.encoding}"
+	           classpath   = "${compile.javac.classpath};${_library.jars}"
+	           includeantruntime="false"/>
+	  	<copy todir="${compile.copy.todir}">
+	  		<fileset dir="${compile.copy.fileset.dir.src}">
+	  	  	<include name="${compile.copy.fileset.include.name}"/>
+	  	  	<exclude name="${compile.copy.fileset.exclude.name}"/>
+	   		</fileset>
+	   	</copy>
+		<copy todir="${compile.copy.todir}">
+			<fileset dir="${compile.copy.fileset.dir.resources}"/>
+		</copy>
+	</target>
+
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] テスト用ソースコードコンパイル
+		■■     
+		■■     [説明] テスト用ソースコードをコンパイルし、指定のビルドディレクトリへ保存します。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="test_compile" depends="init">
+	  	<delete dir="${test_compile.delete.dir}" />
+	  	<mkdir dir="${test_compile.mkdir.dir}" />
+	  	<javac srcdir      = "${test_compile.javac.srcdir}"
+	           destdir     = "${test_compile.javac.destdir}"
+	           deprecation = "${test_compile.javac.deprecation}"
+	           debug       = "${test_compile.javac.debug}"
+	           encoding    = "${test_compile.javac.encoding}"
+	           classpath   = "${test_compile.javac.classpath};${_test.library.jars}"
+	           includeantruntime="false"
+	           />
+	  	<copy todir="${test_compile.copy.todir}">
+	  		<fileset dir="${test_compile.copy.fileset.dir.src}">
+	  			<include name="${test_compile.copy.fileset.include.name}"/>
+	  			<exclude name="${test_compile.copy.fileset.exclude.name}"/>
+	  		</fileset>
+	  	</copy>
+		<copy todir="${test_compile.copy.todir}">
+			<fileset dir="${test_compile.copy.fileset.dir.resources}"/>
+		</copy>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] AspectJ用ソースコードコンパイル
+		■■     
+		■■     [説明] AspectJ用ソースコードをコンパイルし、指定のビルドディレクトリへ保存します。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="aspectj_compile" depends="init" >
+		<taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties">
+			<classpath>
+				<pathelement location="${aspectj_compile.aspectj.jar}"/>
+			</classpath>
+		</taskdef>
+		<delete dir="${aspectj_compile.delete.dir}" />
+	  	<mkdir  dir="${aspectj_compile.mkdir.dir}"  />
+		<iajc          sourceroots = "${aspectj_compile.iajc.sourceroots}" 
+			           source      = "${aspectj_compile.iajc.source}"
+			           destdir     = "${aspectj_compile.iajc.destdir}"
+			           deprecation = "${aspectj_compile.iajc.deprecation}"
+			           debug       = "${aspectj_compile.iajc.debug}"
+			           encoding    = "${aspectj_compile.iajc.encoding}"
+			           classpath   = "${aspectj_compile.iajc.classpath};${_library.jars};${_aspect.library.jars}"
+			           />
+		<copy todir="${aspectj_compile.copy.todir}">
+	  		<fileset dir="${aspectj_compile.copy.fileset.dir.src}">
+	  	  	<include name="${aspectj_compile.copy.fileset.include.name}"/>
+	  	  	<exclude name="${aspectj_compile.copy.fileset.exclude.name}"/>
+	   		</fileset>
+	   	</copy>
+		<copy todir="${aspectj_compile.copy.todir}">
+	  		<fileset dir="${aspectj_compile.copy.fileset.dir.aspect_src}">
+	  	  	<include name="${aspectj_compile.copy.fileset.include.name}"/>
+	  	  	<exclude name="${aspectj_compile.copy.fileset.exclude.name}"/>
+	   		</fileset>
+	   	</copy>
+		<copy todir="${aspectj_compile.copy.todir}">
+			<fileset dir="${aspectj_compile.copy.fileset.dir.resources}"/>
+		</copy>
+		<copy todir="${aspectj_compile.copy.todir}">
+			<fileset dir="${aspectj_compile.copy.fileset.dir.aspect_resources}"/>
+		</copy>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] JAR作成
+		■■     
+		■■     [説明] ビルド済みのクラスをJar形式でまとめます。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="jar" depends="aspectj_compile">
+	  	<delete dir="${jar.delete.dir}" />
+	  	<jar jarfile  = "${jar.jar.jarfile}"
+	         basedir  = "${jar.jar.basedir}" >
+	  	</jar>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] JAR作成（lib含む）
+		■■     
+		■■     [説明] ビルド済みのクラスをJar形式でまとめます。
+		■■            作成されたJarにはビルドされたクラスファイルが依存しているすべてのjarが含まれます。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="jar_all" depends="aspectj_compile">
+	  	<delete dir="${jar_all.delete.dir}" />
+	  	<jar jarfile  = "${jar_all.jar.jarfile}"
+	         basedir  = "${jar_all.jar.basedir}" >
+	  		<zipgroupfileset dir="${library.dir}" includes="*.jar"/>
+	  	</jar>
+	</target>
+  
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] テスト用JAR作成
+		■■     
+		■■     [説明] ビルド済みのテスト用クラスをJar形式でまとめます。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="test_jar" depends="test_compile">
+	  	<delete dir="${test_jar.delete.dir}" />
+	  	<jar jarfile  = "${test_jar.jar.jarfile}"
+	         basedir  = "${test_jar.jar.basedir}" >
+	  	</jar>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] テスト用JAR作成（lib含む）
+		■■     
+		■■     [説明] ビルド済みのテスト用クラスをJar形式でまとめます。
+		■■            作成されたJarにはビルドされたテスト用クラスファイルが依存しているすべてのjarが含まれます。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="test_jar_all" depends="test_compile">
+	  	<delete dir="${test_jar_all.delete.dir}" />
+	  	<jar jarfile  = "${test_jar_all.jar.jarfile}"
+	         basedir  = "${test_jar_all.jar.basedir}" >
+	  		<zipgroupfileset dir="${library.dir}" includes="*.jar"/>
+	  		<zipgroupfileset dir="${test.library.dir}" includes="*.jar"/>
+	  	</jar>
+	</target>
+  
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] Javadoc生成
+		■■     
+		■■     [説明] 指定のJavaのソースコードからJavadocを生成し、指定の出力先に出力します。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="doc" depends="init">
+	  	<delete dir="${doc.delete.dir}"/>
+	  	<mkdir  dir="${doc.mkdir.dir}" />
+	  	<javadoc locale       = "${doc.jacadoc.locale}"
+	             charset      = "${doc.jacadoc.charset}"
+	             encoding     = "${doc.jacadoc.encoding}"
+	             docencoding  = "${doc.jacadoc.docencoding}"
+	             sourcepath   = "${doc.jacadoc.sourcepath}"
+	             packagenames = "${doc.jacadoc.packagenames}"
+	             destdir      = "${doc.jacadoc.destdir}">
+	    	<classpath>
+	    		<pathelement path="${_library.jars}"/>
+	    		<pathelement path="${_test.library.jars}"/>
+	    	</classpath>
+	  	</javadoc>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] JavadocのJARを作成
+		■■     
+		■■     [説明] 指定のJavadocをJarにします。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="doc_jar" depends="init">
+	  	<delete dir="${doc_jar.delete.dir}" />
+	  	<jar jarfile  = "${doc_jar.jar.jarfile}"
+	         basedir  = "${doc_jar.jar.basedir}" >
+	    	<exclude name="**/.*"/>
+	  	</jar>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] ソースJAR作成
+		■■     
+		■■     [説明] ソースコードをJar形式でまとめます。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="src_jar" depends="init">
+	  	<delete dir="${src_jar.delete.dir}" />
+	  	<jar jarfile  = "${src_jar.jar.jarfile}"
+	         basedir  = "${src_jar.jar.basedir}" >
+	    	<exclude name="**/.*"/>
+	  	</jar>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] テストソースJAR作成
+		■■     
+		■■     [説明] テストのソースコードをJar形式でまとめます。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="test_src_jar" depends="init">
+	  	<delete dir="${test_src_jar.delete.dir}" />
+	  	<jar jarfile  = "${test_src_jar.jar.jarfile}"
+	         basedir  = "${test_src_jar.jar.basedir}" >
+	    	<exclude name="**/.*"/>
+	  	</jar>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] FindBugs実行
+		■■     
+		■■     [説明] 指定のソースに対してFindBugsを実行します。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="findbugs_execute" depends="init">
+		<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask">
+			<classpath>
+				<pathelement location="${findbugs.home}/lib/findbugs-ant.jar"/>
+			</classpath>
+		</taskdef>
+	  	<findbugs home="${findbugs_execute.findbugs.home}" output="${findbugs_execute.findbugs.output}" outputFile="${findbugs_execute.findbugs.outputfile}">
+	  		<auxClassPath path="${_test.library.jars}"/>
+	  		<sourcePath path="${findbugs_execute.findbugs.sourcepath.path}"/>
+	  		<class location="${findbugs_execute.findbugs.class.location}"/>
+	  	</findbugs>
+	  	<exec executable="${findbugs_execute.findbugs.home}/bin/findbugs">
+	  		<arg value="${findbugs_execute.findbugs.outputfile}"/>
+	  	</exec>
+	</target>
+
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] CheckStyle実行
+		■■     
+		■■     [説明] 指定のソースに対してCheckStyleを実行します。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="checkstyle_execute" depends="init">
+		<taskdef resource="checkstyletask.properties" classpath="${checkstyle.home}/checkstyle-5.6-all.jar"/>
+		<checkstyle config="${checkstyle_execute.checkstyle.config}" failOnViolation="${checkstyle_execute.checkstyle.failOnViolation}">
+			<fileset dir="${checkstyle_execute.checkstyle.fileset.dir}" includes="${checkstyle_execute.checkstyle.fileset.includes}"/>
+			<formatter type="${checkstyle_execute.checkstyle.formatter.type}" toFile="${checkstyle_execute.checkstyle.formatter.tofile}"/>
+		</checkstyle>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] カバレッジ取得
+		■■     
+		■■     [説明] JUNITのテストコードからカバレッジを生成する。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="coverege_execute">
+    
+	</target>
+  
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] ビルド用ディレクトリ削除
+		■■     
+		■■     [説明] ビルド用に作成したディレクトリとその中に含まれるビルドファイルを削除する
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="clean" depends="init">
+  		<delete dir="${clean.delete.dir}" />
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] ドキュメント用ディレクトリ削除
+		■■     
+		■■     [説明] ビルド用に作成したドキュメントディレクトリとその中に含まれるドキュメントファイルを削除する
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="clean_doc" depends="init">
+  		<delete dir="${clean_doc.delete.dir}" />
+	</target>
+
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] テストを実行
+		■■     
+		■■     [説明] JUNITテストコードを検索し、逐次テストを実行する。
+		■■            テストが失敗した場合、その時点で<fail/>を発生し、処理は終了する。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="test_execute" depends="init">
+  		<junit fork="${test_execute.junit.fork}" haltonfailure="${test_execute.junit.haltonfailure}">
+  			<jvmarg value="${test_execute.jvmarg.value}"/>
+		  	<test name="${test_execute.junit.test.name}" />
+	      	<formatter type="plain" usefile="false" />
+		  	<classpath>
+		  		<pathelement path="${test_execute.junit.classpath.pathelement.location.test_properties}" />
+		  		<pathelement path="${test_execute.junit.classpath.pathelement.location.test_message}" />
+		  		<pathelement path="${test_execute.junit.classpath.pathelement.location.test_resources}" />
+		  		<pathelement path="${test_execute.junit.classpath.pathelement.location.test_jar}" />
+		  		<pathelement path="${test_execute.junit.classpath.pathelement.location.jar}" />
+		  		<pathelement path="${_test.library.jars};${_aspect.library.jars}" />
+	      	</classpath>
+		</junit>
+	</target>
+	
+	<!--================================================-->
+	<!-- 全ジョブ実行 -->
+	<!--================================================-->
+	<target name="all">
+		<antcall target="jar"/>
+		<antcall target="test_jar"/>
+		<antcall target="jar_all"/>
+		<antcall target="test_jar_all"/>
+		<antcall target="doc"/>
+		<!-- <antcall target="doc_jar"/> -->
+		<antcall target="src_jar"/>
+		<antcall target="test_src_jar"/>
+		<antcall target="clean"/>
+		<!-- <antcall target="clean_doc"/> -->
+		<!-- <antcall target="test_execute"/> -->
+		<!-- <antcall target="findbugs_execute"/> -->
+		<!-- <antcall target="checkstyle_execute"/> -->
+	</target>
+</project>
