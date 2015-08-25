@@ -5,7 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerException;
+import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerCypherException;
+import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*;
 
 /**
  * Cypherは、Cypher本文と、そのCypherに対するパラメータを保持し、単一のCypher本文を生成するクラスです。
@@ -27,20 +28,20 @@ public class Cypher implements Cloneable {
 	 * Cypher本文がnull、または空文字の場合例外を送出します。
 	 * 
 	 * @param cypher Cypher本文の文字列
-	 * @throws Neo4JDataStoreManagerException Cypherオブジェクトのインスタンス生成に失敗した場合
+	 * @throws Neo4JDataStoreManagerCypherException Cypherオブジェクトのインスタンス生成に失敗した場合
 	 */
-	public Cypher(String cypher) throws Neo4JDataStoreManagerException {
-		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerException(FAILE_TO_CREATE_SQL_OBJECT); 
+	public Cypher(String cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET); 
 		this.cypher.append(cypher);
 	}
 	
 	/**
 	 * 指定のCypher言語の文字列を本クラスのCypherの最初に追加します。
 	 * @param cypher Cypher文字列
-	 * @throws Neo4JDataStoreManagerException 引数に指定されたCypherがnullまたは空文字の場合
+	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
-	public Cypher appendTop(String cypher) throws Neo4JDataStoreManagerException {
-		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerException(FAILE_TO_CREATE_SQL_OBJECT);
+	public Cypher appendTop(String cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
 		this.cypher = new StringBuilder(cypher).append(this.cypher);
 		return this;
 	}
@@ -49,10 +50,10 @@ public class Cypher implements Cloneable {
 	 * 指定のCypherオブジェクトを本クラスのCypherの最初に追加します。<p/>
 	 * 引数に指定されたCypherオブジェクトが持つCypherを表す文字列、パラメータともに最初に追加します。
 	 * @param cypher Cypherオブジェクト
-	 * @throws Neo4JDataStoreManagerException 引数に指定されたCypherがnullまたは空文字の場合
+	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
-	public Cypher appendTop(Cypher cypher) throws Neo4JDataStoreManagerException {
-		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerException(FAILE_TO_CREATE_SQL_OBJECT);
+	public Cypher appendTop(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
 		this.cypher = new StringBuilder(cypher.cypher.toString()).append(this.cypher);
 		List<CypherParameter> newCypherParameter = new ArrayList<>(cypher.cypherParameter);
 		newCypherParameter.addAll(this.cypherParameter);
@@ -63,10 +64,10 @@ public class Cypher implements Cloneable {
 	/**
 	 * 指定のCypher言語の文字列を本クラスのCypherの末尾に追加します。
 	 * @param cypher Cypher文字列
-	 * @throws Neo4JDataStoreManagerException 引数に指定されたCypherがnullまたは空文字の場合
+	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
-	public Cypher append(String cypher) throws Neo4JDataStoreManagerException {
-		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerException(FAILE_TO_CREATE_SQL_OBJECT); 
+	public Cypher append(String cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET); 
 		this.cypher.append(cypher);
 		return this;
 	}
@@ -75,10 +76,10 @@ public class Cypher implements Cloneable {
 	 * 指定のCypherオブジェクトを本クラスのCypherの末尾に追加します。<p/>
 	 * 引数に指定されたCypherオブジェクトが持つCypherを表す文字列、パラメータともに末尾に追加します。
 	 * @param cypher Cypherオブジェクト
-	 * @throws Neo4JDataStoreManagerException 引数に指定されたCypherがnullまたは空文字の場合
+	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
-	public Cypher append(Cypher cypher) throws Neo4JDataStoreManagerException {
-		if (cypher == null) throw new Neo4JDataStoreManagerException(FAILE_TO_CREATE_SQL_OBJECT); 
+	public Cypher append(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET); 
 		this.cypher.append(cypher.cypher.toString());
 		this.cypherParameter.addAll(cypher.cypherParameter);
 		return this;
@@ -129,7 +130,7 @@ public class Cypher implements Cloneable {
 	 * このCypherに設定されたCypherに対するパラメータの一覧を取得します。
 	 * @return パラメータの一覧
 	 */
-	Map<String, Object> getParameter() {
+	public Map<String, Object> getParameter() {
 		Map<String, Object> parameter = new HashMap<String, Object>();
 		for (int i=1; i<=this.cypherParameter.size(); i++) parameter.put(Integer.toString(i), this.cypherParameter.get(i-1).getParameter());
 		return parameter;
