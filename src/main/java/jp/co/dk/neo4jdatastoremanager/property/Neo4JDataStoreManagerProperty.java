@@ -68,7 +68,7 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 		String neo4jurl      = this.getString("neo4j.server"  );
 		String neo4juser     = this.getString("neo4j.user"    );
 		String neo4jpassword = this.getString("neo4j.password");
-		if (neo4juser != null && neo4juser.equals("") && neo4jpassword != null && neo4jpassword.equals("")) {
+		if (neo4juser != null && !neo4juser.equals("") && neo4jpassword != null && !neo4jpassword.equals("")) {
 			return new Neo4JDataStoreParameter(neo4jurl, neo4juser, neo4jpassword);
 		} else {
 			return new Neo4JDataStoreParameter(neo4jurl);
