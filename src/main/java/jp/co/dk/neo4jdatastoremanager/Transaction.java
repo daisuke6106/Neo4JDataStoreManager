@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import jp.co.dk.logger.Logger;
+import jp.co.dk.logger.LoggerFactory;
 import jp.co.dk.neo4jdatastoremanager.cypher.Cypher;
 import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerCypherException;
 import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerException;
@@ -18,6 +20,9 @@ import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessag
 
 public class Transaction implements Closeable {
 	
+	/** データストアパラメータ */
+	protected Neo4JDataStoreParameter parameter;
+	
 	/** グラフデータベースサービス */
 	protected RestAPIFacade restApiFacade;
 	
@@ -27,12 +32,16 @@ public class Transaction implements Closeable {
 	/** トランザクション */
 	protected org.neo4j.graphdb.Transaction transaction;
 	
+	/** ロガーインスタンス */
+	protected Logger logger = LoggerFactory.getLogger(this.getClass());
+	
 	Transaction(Neo4JDataStoreParameter parameter) throws Neo4JDataStoreManagerException {
 		if (parameter == null) throw new Neo4JDataStoreManagerException(NEO4JPARAMETER_IS_NOT_SET);
+		this.parameter = parameter;
 		if (parameter.isAuthSet()) {
-			this.restApiFacade = new RestAPIFacade(parameter.getCrawlerNeo4jServer(), parameter.getCrawlerNeo4jUser() ,parameter.getCrawlerNeo4jPass());
+			this.restApiFacade = new RestAPIFacade(parameter.getNeo4jServer(), parameter.getNeo4jUser() ,parameter.getNeo4jPassword());
 		} else {
-			this.restApiFacade = new RestAPIFacade(parameter.getCrawlerNeo4jServer());
+			this.restApiFacade = new RestAPIFacade(parameter.getNeo4jServer());
 		}
 		this.graphDatabaseService = new RestGraphDatabase(this.restApiFacade);
 		this.transaction          = this.graphDatabaseService.beginTx();
@@ -79,4 +88,36 @@ public class Transaction implements Closeable {
 	protected void finalize() { 
 		this.close();
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ ((parameter == null) ? 0 : parameter.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Transaction other = (Transaction) obj;
+		if (parameter == null) {
+			if (other.parameter != null)
+				return false;
+		} else if (!parameter.equals(other.parameter))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Transaction [parameter=" + parameter + "]";
+	}
+	
 }

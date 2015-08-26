@@ -10,24 +10,6 @@ import jp.co.dk.neo4jdatastoremanager.property.Neo4JDataStoreManagerProperty;
 
 import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*;
 
-/**
- * DataStoreManagerは、Oracle、Mysql、PostgreSqlなどのデータストアに対する管理を行うクラスです。<p/>
- * <br/>
- * このクラスは指定のデータストアへのトランザクション制御、各種テーブルへのDAOの取得などデータストアへの操作を管理する制御クラスとなります。<br/>
- * <br/>
- * 対応しているデータストアは以下の 通りとなります。<br/>
- * 
- * ===RDB===<br/>
- * ・Oracle<br/>
- * ・MySql<br/>
- * ・PostgreSql<br/>
- * <br/>
- * ===ファイル===<br/>
- * ・csvファイル<br/>
- * 
- * @version 1.0
- * @author D.Kanno
- */
 public class Neo4JDataStoreManager {
 	
 	/** デフォルトのデータストア */
