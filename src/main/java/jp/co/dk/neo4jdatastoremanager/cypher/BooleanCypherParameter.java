@@ -10,7 +10,7 @@ class BooleanCypherParameter extends CypherParameter{
 
 	@Override
 	Object getParameter() {
-		return new Boolean(parameter);
+		return Boolean.valueOf(parameter);
 	}
 	
 	@Override
@@ -24,7 +24,7 @@ class BooleanCypherParameter extends CypherParameter{
 	
 	@Override
 	public int hashCode() {
-		return new Boolean(this.parameter).hashCode();
+		return Boolean.valueOf(this.parameter).hashCode();
 	}
 	
 	@Override

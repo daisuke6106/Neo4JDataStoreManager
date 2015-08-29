@@ -15,10 +15,13 @@ import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessag
 
 public class Node {
 	
+	protected long id;
+	
 	protected org.neo4j.graphdb.Node node;
 	
 	Node(org.neo4j.graphdb.Node node) {
 		this.node = node;
+		this.id   = this.node.getId();
 	}
 	
 	public List<Node> getOutGoingNodes(NodeSelector selector) {
@@ -70,11 +73,11 @@ public class Node {
 	}
 	
 	public void setProperty(String key, int value) {
-		this.node.setProperty(key, new Integer(value));
+		this.node.setProperty(key, Integer.valueOf(value));
 	}
 	
 	public void setProperty(String key, boolean value) {
-		this.node.setProperty(key, new Boolean(value));
+		this.node.setProperty(key, Boolean.valueOf(value));
 	}
 	
 	public String getProperty(String key) {
@@ -84,4 +87,40 @@ public class Node {
 	public void addOutGoingRelation(RelationshipType label, Node node) {
 		this.node.createRelationshipTo(node.node, label);
 	}
+	
+	public long getID() {
+		return this.id;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (id ^ (id >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Node other = (Node) obj;
+		if (id != other.id)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("NODE [ID=");
+		builder.append(id);
+		builder.append("]");
+		return builder.toString();
+	}
+	
 }

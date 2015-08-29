@@ -10,7 +10,7 @@ class NumericCypherParameter extends CypherParameter{
 
 	@Override
 	Object getParameter() {
-		return new Integer(this.parameter);
+		return Integer.valueOf(this.parameter);
 	}
 	
 	@Override

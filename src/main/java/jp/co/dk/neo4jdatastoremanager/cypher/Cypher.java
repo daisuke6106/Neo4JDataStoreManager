@@ -53,7 +53,7 @@ public class Cypher implements Cloneable {
 	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
 	public Cypher appendTop(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
-		if (cypher == null || cypher.equals("")) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
+		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
 		this.cypher = new StringBuilder(cypher.cypher.toString()).append(this.cypher);
 		List<CypherParameter> newCypherParameter = new ArrayList<>(cypher.cypherParameter);
 		newCypherParameter.addAll(this.cypherParameter);

@@ -45,6 +45,7 @@ public class Transaction implements Closeable {
 		}
 		this.graphDatabaseService = new RestGraphDatabase(this.restApiFacade);
 		this.transaction          = this.graphDatabaseService.beginTx();
+		this.logger.info("transaction start param=[" + this.parameter + "]");
 	}
 	
 	public void commit() {
@@ -117,7 +118,8 @@ public class Transaction implements Closeable {
 
 	@Override
 	public String toString() {
-		return "Transaction [parameter=" + parameter + "]";
+		StringBuilder builder = new StringBuilder();
+		builder.append("CONNECTION_HASH=[").append(this.transaction.hashCode()).append("] PARAMETER=").append(this.parameter.toString()).append(']');
+		return builder.toString();
 	}
-	
 }

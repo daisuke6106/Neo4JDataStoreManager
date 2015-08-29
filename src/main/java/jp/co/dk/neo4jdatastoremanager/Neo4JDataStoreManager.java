@@ -7,7 +7,6 @@ import jp.co.dk.logger.Logger;
 import jp.co.dk.logger.LoggerFactory;
 import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerException;
 import jp.co.dk.neo4jdatastoremanager.property.Neo4JDataStoreManagerProperty;
-
 import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*;
 
 public class Neo4JDataStoreManager {
@@ -25,7 +24,7 @@ public class Neo4JDataStoreManager {
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	/**
-	 * コンストラクタ<p/>
+	 * <p>コンストラクタ</p>
 	 * 
 	 * 
 	 * @param dataStoreManagerProperty データストアマネージャプロパティ
@@ -37,7 +36,7 @@ public class Neo4JDataStoreManager {
 		this.dataStoreManagerProperty                = dataStoreManagerProperty;
 		this.defaultDataStore                        = dataStoreManagerProperty.getDefaultDataStoreParameter().createDataStore();
 		Map<String, Neo4JDataStoreParameter> parameterMap = dataStoreManagerProperty.getDataStoreParameters();
-		for (String name : parameterMap.keySet()) this.dataStores.put(name, parameterMap.get(name).createDataStore());
+		for (Map.Entry<String, Neo4JDataStoreParameter> parameter : parameterMap.entrySet()) this.dataStores.put(parameter.getKey(), parameter.getValue().createDataStore());
 	}
 	
 	/**
@@ -66,9 +65,7 @@ public class Neo4JDataStoreManager {
 	 */
 	public void commit() throws Neo4JDataStoreManagerException {
 		this.defaultDataStore.commit();
-		for (String name : dataStores.keySet()) {
-			this.dataStores.get(name).commit();
-		}
+		for (Map.Entry<String, Neo4JDataStore> dataStore : dataStores.entrySet()) dataStore.getValue().commit();
 	}
 	
 	/**
@@ -78,9 +75,7 @@ public class Neo4JDataStoreManager {
 	 */
 	public void rollback() throws Neo4JDataStoreManagerException {
 		this.defaultDataStore.rollback();
-		for (String name : dataStores.keySet()) {
-			this.dataStores.get(name).rollback();
-		}
+		for (Map.Entry<String, Neo4JDataStore> dataStore : dataStores.entrySet()) dataStore.getValue().rollback();
 	}
 	
 	/**
@@ -90,8 +85,8 @@ public class Neo4JDataStoreManager {
 	 */
 	public boolean hasError() {
 		if (this.defaultDataStore.hasError()) return true;
-		for (String name : dataStores.keySet()) {
-			if (this.dataStores.get(name).hasError()) return true;
+		for (Map.Entry<String, Neo4JDataStore> dataStore : dataStores.entrySet()) {
+			if (dataStore.getValue().hasError()) return true;
 		}
 		return false;
 	}
@@ -105,18 +100,59 @@ public class Neo4JDataStoreManager {
 	public void finishTrunsaction() throws Neo4JDataStoreManagerException {
 		if (this.hasError()) {
 			this.defaultDataStore.rollback();
-			for (String name : dataStores.keySet()) {
-				this.dataStores.get(name).rollback();
-			}
+			for (Map.Entry<String, Neo4JDataStore> dataStore : dataStores.entrySet()) dataStore.getValue().rollback();
 		} else {
 			this.defaultDataStore.commit();
-			for (String name : dataStores.keySet()) {
-				this.dataStores.get(name).commit();
-			}
+			for (Map.Entry<String, Neo4JDataStore> dataStore : dataStores.entrySet()) dataStore.getValue().commit();
 		}
 		this.defaultDataStore.finishTransaction();
-		for (Neo4JDataStore dataStore : dataStores.values()) {
-			dataStore.finishTransaction();
-		}
+		for (Map.Entry<String, Neo4JDataStore> dataStore : dataStores.entrySet()) dataStore.getValue().finishTransaction();
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ ((dataStores == null) ? 0 : dataStores.hashCode());
+		result = prime
+				* result
+				+ ((defaultDataStore == null) ? 0 : defaultDataStore.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Neo4JDataStoreManager other = (Neo4JDataStoreManager) obj;
+		if (dataStores == null) {
+			if (other.dataStores != null)
+				return false;
+		} else if (!dataStores.equals(other.dataStores))
+			return false;
+		if (defaultDataStore == null) {
+			if (other.defaultDataStore != null)
+				return false;
+		} else if (!defaultDataStore.equals(other.defaultDataStore))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("NEO4JDATASTOREMANAGER [DEFAULTDATASTORE=");
+		builder.append(defaultDataStore);
+		builder.append(", DATASTORES=");
+		builder.append(dataStores);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	
 }

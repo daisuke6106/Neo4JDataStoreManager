@@ -11,7 +11,7 @@ import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerException;
 import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*;
 
 /**
- * DataBaseDataStoreは、単一のデータベースのデータストアを表すクラスです。<p/>
+ * <p>DataBaseDataStoreは、単一のデータベースのデータストアを表すクラスです。</p>
  * 単一の接続先に対するトランザクション管理、Cypherの実行、実行されたCypherの履歴保持を行う。<br/>
  * 
  * @version 1.1
@@ -89,33 +89,38 @@ public class Neo4JDataStore {
 	
 	@Override
 	public int hashCode() {
-		int hashcode = this.dataBaseAccessParameter.hashCode();
-		return hashcode;
+		final int prime = 31;
+		int result = 1;
+		result = prime
+				* result
+				+ ((dataBaseAccessParameter == null) ? 0
+						: dataBaseAccessParameter.hashCode());
+		return result;
 	}
-	
+
 	@Override
-	public boolean equals(Object object) {
-		if (object == null) return false;
-		if (!(object instanceof Neo4JDataStore)) return false;
-		Neo4JDataStore thisClassObj = (Neo4JDataStore) object;
-		if (this.transaction == null && thisClassObj.transaction == null) {
-			if(thisClassObj.dataBaseAccessParameter.hashCode() == this.dataBaseAccessParameter .hashCode()) return true;
-		} else if (this.transaction == null && thisClassObj.transaction != null) {
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
 			return false;
-		} else if (this.transaction != null && thisClassObj.transaction == null) {
+		if (getClass() != obj.getClass())
 			return false;
-		} else {
-			if(thisClassObj.transaction.hashCode() == this.transaction.hashCode()) return true;
-		}
-		return false;
+		Neo4JDataStore other = (Neo4JDataStore) obj;
+		if (dataBaseAccessParameter == null) {
+			if (other.dataBaseAccessParameter != null)
+				return false;
+		} else if (!dataBaseAccessParameter
+				.equals(other.dataBaseAccessParameter))
+			return false;
+		return true;
 	}
-	
+
 	@Override
 	public String toString() {
 		if (this.transaction == null) {
 			StringBuilder sb = new StringBuilder();
-			sb.append("CONNECTION_HASH=[Transaction has not been started]").append(',');
-			sb.append(this.dataBaseAccessParameter.toString());
+			sb.append("CONNECTION_HASH=[Transaction has not been started.] PARAMETER=").append(this.dataBaseAccessParameter.toString()).append(']');
 			return sb.toString();
 		} else {
 			return this.transaction.toString();

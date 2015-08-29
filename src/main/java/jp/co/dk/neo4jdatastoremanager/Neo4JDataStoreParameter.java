@@ -98,9 +98,16 @@ public class Neo4JDataStoreParameter {
 
 	@Override
 	public String toString() {
-		return "Neo4JDataStoreParameter [neo4jServer=" + neo4jServer
-				+ ", neo4jUser=" + neo4jUser + ", neo4jPassword="
-				+ neo4jPassword + ", isAuthSet=" + isAuthSet + "]";
+		StringBuilder builder = new StringBuilder();
+		builder.append("NEO4JSERVER=");
+		builder.append(neo4jServer);
+		builder.append(", NEO4JUSER=");
+		builder.append(neo4jUser);
+		builder.append(", NEO4JPASSWORD=");
+		builder.append(neo4jPassword);
+		builder.append(", ISAUTHSET=");
+		builder.append(isAuthSet);
+		return builder.toString();
 	}
 	
 }
