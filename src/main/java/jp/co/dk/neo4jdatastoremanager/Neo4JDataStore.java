@@ -14,7 +14,7 @@ import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessag
  * <p>DataBaseDataStoreは、単一のデータベースのデータストアを表すクラスです。</p>
  * 単一の接続先に対するトランザクション管理、Cypherの実行、実行されたCypherの履歴保持を行う。<br/>
  * 
- * @version 1.1
+ * @version 0.1
  * @author D.Kanno
  */
 public class Neo4JDataStore {
@@ -45,43 +45,97 @@ public class Neo4JDataStore {
 		this.dataBaseAccessParameter = dataBaseAccessParameter;
 	}
 	
+	/**
+	 * <p>トランザクションを開始する。</p>
+	 * 本オブジェクトに設定されたパラメータを基にデータベースに接続してトランザクションを開始します。
+	 * @throws Neo4JDataStoreManagerException トランザクション開始に失敗した場合
+	 */
 	public void startTransaction() throws Neo4JDataStoreManagerException {
 		this.transaction = new Transaction(this.dataBaseAccessParameter);
 	}
 	
+	/**
+	 * <p>ノードを作成する。</p>
+	 * このデータストアに対してノードを作成し、返却します。
+	 * @return 作成したノード
+	 */
 	public Node createNode() {
 		return this.transaction.createNode();
 	}
 	
+	/**
+	 * <p>検索結果を取得する。（単一）</p>
+	 * 指定のCypherを実行し、単一のノードを取得します。<br/>
+	 * 
+	 * @param cypher 実行対象のCypher
+	 * @return 取得したノード
+	 * @throws Neo4JDataStoreManagerCypherException Cypherの実行に失敗した場合
+	 */
 	public Node selectNode(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
 		return this.transaction.selectNode(cypher);
 	}
 	
+	/**
+	 * <p>検索結果を取得する。（複数）</p>
+	 * 指定のCypherを実行し、複数のノードを取得します。<br/>
+	 * 
+	 * @param cypher 実行対象のCypher
+	 * @return 取得したノード
+	 * @throws Neo4JDataStoreManagerCypherException Cypherの実行に失敗した場合
+	 */
 	public List<Node> selectNodes(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
 		return this.transaction.selectNodes(cypher);
 	}
 	
+	/**
+	 * <p>コミットを実施する。</p>
+	 * 現在開始済みのトランザクションに対して、コミット処理を実施します。
+	 * トランザクションが開始されていない状態で実行された場合、例外を送出します。
+	 * @throws Neo4JDataStoreManagerException トランザクションが開始されていない状態で実行された場合
+	 */
 	public void commit() throws Neo4JDataStoreManagerException {
 		if (this.transaction == null) throw new Neo4JDataStoreManagerException(TRANSACTION_IS_NOT_START);
 		this.transaction.commit();
 	}
-
+	
+	/**
+	 * <p>ロールバックを実施する。</p>
+	 * 現在開始済みのトランザクションに対して、ロールバック処理を実施します。<br/>
+	 * トランザクションが開始されていない状態で実行された場合、例外を送出します。
+	 * @throws Neo4JDataStoreManagerException トランザクションが開始されていない状態で実行された場合
+	 */
 	public void rollback() throws Neo4JDataStoreManagerException {
 		if (this.transaction == null) throw new Neo4JDataStoreManagerException(TRANSACTION_IS_NOT_START);
 		this.transaction.rollback();
 	}
 	
+	/**
+	 * <p>トランザクションのクローズ処理を実施する。</p>
+	 * 現在開始済みのトランザクションに対して、クローズ処理を実施します。<br/>
+	 * トランザクションが開始されていない状態で実行された場合、例外を送出します。
+	 * @throws Neo4JDataStoreManagerException トランザクションが開始されていない状態で実行された場合
+	 */
 	public void finishTransaction() throws Neo4JDataStoreManagerException {
 		if (this.transaction == null) throw new Neo4JDataStoreManagerException(TRANSACTION_IS_NOT_START);
 		this.transaction.close();
 		this.transaction = null;
 	}
 	
+	/**
+	 * <p>トランザクションが開始されているかを判定します。</p>
+	 * トランザクションが開始済みである場合、true、開始されていない場合はfalseを返却します
+	 * @return トランザクションが開始済みである場合、true、開始されていない場合はfalse
+	 */
 	public boolean isTransaction() {
 		if (this.transaction != null) return true;
 		return false;
 	}
 	
+	/**
+	 * <p>データベース操作時に、異常が発生しているか否かを判定。</p>
+	 * データベース操作時に例外が発生していた場合はtrue、発生していなかった場合は、falseを返却します。
+	 * @return データベース操作時に例外が発生していた場合はtrue、発生していなかった場合は、false
+	 */
 	public boolean hasError() {
 		if (this.exceptionList.size() != 0) return true;
 		return false;

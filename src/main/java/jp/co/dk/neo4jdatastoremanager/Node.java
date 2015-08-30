@@ -13,6 +13,12 @@ import org.neo4j.graphdb.RelationshipType;
 
 import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*;
 
+/**
+ * <p>Neo4Jでのノードを表すクラスです。</p>
+ * 
+ * @author dk
+ *
+ */
 public class Node {
 	
 	protected long id;

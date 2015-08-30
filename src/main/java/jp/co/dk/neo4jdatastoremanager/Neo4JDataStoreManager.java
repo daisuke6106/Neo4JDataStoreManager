@@ -9,6 +9,12 @@ import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerException;
 import jp.co.dk.neo4jdatastoremanager.property.Neo4JDataStoreManagerProperty;
 import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*;
 
+/**
+ * <p>Neo4JDataStoreManagerは、単一、もしくは複数のNeo4Jデータベースへの接続、トランザクションの管理を行うクラスです。</p>
+ * 
+ * @version 0.1
+ * @author D.Kanno
+ */
 public class Neo4JDataStoreManager {
 	
 	/** デフォルトのデータストア */
