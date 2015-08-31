@@ -1,5 +1,7 @@
 package jp.co.dk.neo4jdatastoremanager;
 
+import java.io.Closeable;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +17,7 @@ import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessag
  * @version 0.1
  * @author D.Kanno
  */
-public class Neo4JDataStoreManager {
+public class Neo4JDataStoreManager implements Closeable {
 	
 	/** デフォルトのデータストア */
 	protected Neo4JDataStore defaultDataStore;
@@ -58,14 +60,22 @@ public class Neo4JDataStoreManager {
 		}
 	}
 	
-	public Neo4JDataStore getDataAccessObject(String name) throws Neo4JDataStoreManagerException {
+	/**
+	 * <p>指定の名称のデータベースアクセスオブジェクトを返却する。</p>
+	 * 該当する名称のデータベースアクセスオブジェクトが存在しなかった場合、デフォルトのデータベースアクセスオブジェクトが返却される。
+	 * ここでいう名称はプロパティに指定された個別の接続先定義の名称を指す。
+	 * 
+	 * @param name データベースアクセスオブジェクト名称
+	 * @return データベースアクセスオブジェクト
+	 */
+	public Neo4JDataStore getDataAccessObject(String name) {
 		Neo4JDataStore dataStore = this.dataStores.get(name);
 		if (dataStore != null) return dataStore;
 		return this.defaultDataStore;
 	}
 	
 	/**
-	 * このトランザクションに対してコミットを実行します。
+	 * <p>このトランザクションに対してコミットを実行します。</p>
 	 * 
 	 * @throws Neo4JDataStoreManagerException コミットに失敗した場合
 	 */
@@ -75,7 +85,7 @@ public class Neo4JDataStoreManager {
 	}
 	
 	/**
-	 * このトランザクションに対してロールバックを実行します。
+	 * <p>このトランザクションに対してロールバックを実行します。</p>
 	 * 
 	 * @throws Neo4JDataStoreManagerException ロールバックに失敗した場合
 	 */
@@ -85,7 +95,7 @@ public class Neo4JDataStoreManager {
 	}
 	
 	/**
-	 * このデータストアにてエラーが発生したかを判定します。
+	 * <p>このデータストアにてエラーが発生したかを判定します。</p>
 	 * 
 	 * @return 判定結果（true=エラーが発生した、false=エラーは発生していない）
 	 */
@@ -98,8 +108,8 @@ public class Neo4JDataStoreManager {
 	}
 	
 	/**
-	 * このデータストア管理クラスが管理しているすべてのデータストアに対してトランザクションを終了します。<p/>
-	 * トランザクション終了処理に失敗した場合、例外を送出します。<br/>
+	 * <p>このデータストア管理クラスが管理しているすべてのデータストアに対してトランザクションを終了します。<p/>
+	 * トランザクション終了処理に失敗した場合、例外を送出します。
 	 * 
 	 * @throws Neo4JDataStoreManagerException トランザクション終了に失敗した場合
 	 */
@@ -158,6 +168,15 @@ public class Neo4JDataStoreManager {
 		builder.append(dataStores);
 		builder.append("]");
 		return builder.toString();
+	}
+
+	@Override
+	public void close() throws IOException {
+		try {
+			this.finishTrunsaction();
+		} catch (Neo4JDataStoreManagerException e) {
+			throw new IOException(e);
+		}
 	}
 	
 	

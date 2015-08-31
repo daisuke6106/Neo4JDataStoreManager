@@ -3,6 +3,13 @@ package jp.co.dk.neo4jdatastoremanager;
 import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerException;
 import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*;
 
+/**
+ * <p>Neo4J接続情報クラス</p>
+ * Neo4Jに接続する際の必要な、サーバ、ユーザ、パスワードの情報を保持するクラスです。
+ * 
+ * @version 0.1
+ * @author D.Kanno
+ */
 public class Neo4JDataStoreParameter {
 	
 	/** NEO4Jサーバアドレス */
@@ -17,12 +24,24 @@ public class Neo4JDataStoreParameter {
 	/** 認証情報が設定有無 */
 	protected boolean isAuthSet = false;
 	
+	/**
+	 * <p>Neo4J接続先サーバURLを基に、Neo4J接続情報を生成します。</p>
+	 * @param neo4jServer Neo4JサーバURL
+	 * @throws Neo4JDataStoreManagerException 必須情報が設定されていなかった場合
+	 */
 	public Neo4JDataStoreParameter(String neo4jServer) throws Neo4JDataStoreManagerException {
 		if (neo4jServer == null || neo4jServer.equals("")) throw new Neo4JDataStoreManagerException(NEO4JSERVER_IS_NOT_SET);
 		this.neo4jServer = neo4jServer;
 		this.isAuthSet = false;
 	}
 	
+	/**
+	 * <p>Neo4J接続先サーバURL、Neo4Jユーザ、Neo4Jパスワードを基に、Neo4J接続情報を生成します。</p>
+	 * @param neo4jServer Neo4JサーバURL
+	 * @param neo4jUser   Neo4Jユーザ
+	 * @param neo4jPass   Neo4Jパスワード
+	 * @throws Neo4JDataStoreManagerException 必須情報が設定されていなかった場合
+	 */
 	public Neo4JDataStoreParameter(String neo4jServer, String neo4jUser, String neo4jPass) throws Neo4JDataStoreManagerException {
 		if (neo4jServer == null || neo4jServer.equals("")) throw new Neo4JDataStoreManagerException(NEO4JSERVER_IS_NOT_SET);
 		if (neo4jUser   == null || neo4jUser.equals(""))   throw new Neo4JDataStoreManagerException(NEO4JUSERNAME_IS_NOT_SET);
@@ -33,23 +52,23 @@ public class Neo4JDataStoreParameter {
 		this.isAuthSet = true;
 	}
 
-	public String getNeo4jServer() {
+	String getNeo4jServer() {
 		return neo4jServer;
 	}
 
-	public String getNeo4jUser() {
+	String getNeo4jUser() {
 		return neo4jUser;
 	}
 
-	public String getNeo4jPassword() {
+	String getNeo4jPassword() {
 		return neo4jPassword;
 	}
 
-	public boolean isAuthSet() {
+	boolean isAuthSet() {
 		return isAuthSet;
 	}
 	
-	public Neo4JDataStore createDataStore() {
+	Neo4JDataStore createDataStore() {
 		return new Neo4JDataStore(this);
 	}
 

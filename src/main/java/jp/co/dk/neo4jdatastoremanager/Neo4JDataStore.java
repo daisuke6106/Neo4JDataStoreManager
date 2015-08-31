@@ -35,8 +35,7 @@ public class Neo4JDataStore {
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	/**
-	 * コンストラクタ<p/>
-	 * 指定のデータベースアクセスパラメータを基にデータベースデータストアを生成します。
+	 * <p>指定のデータベースアクセスパラメータを基にデータベースデータストアを生成します。</p>
 	 * 
 	 * @param dataBaseAccessParameter データベースアクセスパラメータ
 	 */

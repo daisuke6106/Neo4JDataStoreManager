@@ -16,20 +16,31 @@ import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessag
 /**
  * <p>Neo4Jでのノードを表すクラスです。</p>
  * 
- * @author dk
- *
+ * @version 0.1
+ * @author D.Kanno
  */
 public class Node {
 	
+	/** ノードＩＤ */
 	protected long id;
 	
+	/** Neo4Jノードオブジェクト */
 	protected org.neo4j.graphdb.Node node;
 	
+	/**
+	 * <p>Neo4Jノードオブジェクトを基にノードを作成します。</p>
+	 * @param node Neo4Jノードオブジェクト
+	 */
 	Node(org.neo4j.graphdb.Node node) {
 		this.node = node;
 		this.id   = this.node.getId();
 	}
 	
+	/**
+	 * <p>このノードから外向きに関連するノードで指定の条件に合致するノードを取得する。</p>
+	 * @param selector 指定の条件を定義したオブジェクト
+	 * @return この条件に合致したノード一覧
+	 */
 	public List<Node> getOutGoingNodes(NodeSelector selector) {
 		List<Node> nodeList = new ArrayList<Node>();
 		Iterator<Relationship> relationshipList = this.node.getRelationships(Direction.OUTGOING).iterator();
@@ -43,6 +54,10 @@ public class Node {
 		return nodeList;
 	}
 	
+	/**
+	 * <p>このノードから外向きに関連するノードを取得する。</p>
+	 * @return 外向きに関連するノード一覧
+	 */
 	public List<Node> getOutGoingNodes() {
 		List<Node> nodeList = new ArrayList<Node>();
 		Iterator<Relationship> relationshipList = this.node.getRelationships(Direction.OUTGOING).iterator();
@@ -53,10 +68,23 @@ public class Node {
 		return nodeList;
 	}
 	
+	/**
+	 * このノードにラベルを追加する。
+	 * @param label ラベルオブジェクト
+	 */
 	public void addLabel(org.neo4j.graphdb.Label label) {
 		this.node.addLabel(label);
 	}
 	
+	/**
+	 * <p>このノードに対して指定のマップの要素すべてをプロパティとして登録します。</p>
+	 * マップのキーはプロパティのキー、マップの値はプロパティとして設定されます。
+	 * 値には、String,Boolean,Integerの３種類のみ設定可能です。
+	 * 値に、それ以外の型、もしくはNULL値が設定されていた場合、例外が送出されます。
+	 * 
+	 * @param properties プロパティ一覧
+	 * @throws Neo4JDataStoreManagerException NULL値が設定されていた場合
+	 */
 	public void setProperty(Map<String, Object> properties) throws Neo4JDataStoreManagerException {
 		for (Map.Entry<String, Object> property : properties.entrySet()) {
 			String key = property.getKey();
@@ -74,26 +102,56 @@ public class Node {
 		}
 	}
 	
+	/**
+	 * <p>このノードに対して指定のプロパティを登録します。</p>
+	 * @param key プロパティキー
+	 * @param value プロパティ値
+	 */
 	public void setProperty(String key, String value) {
 		this.node.setProperty(key, value);
 	}
 	
+	/**
+	 * <p>このノードに対して指定のプロパティを登録します。</p>
+	 * @param key プロパティキー
+	 * @param value プロパティ値
+	 */
 	public void setProperty(String key, int value) {
 		this.node.setProperty(key, Integer.valueOf(value));
 	}
 	
+	/**
+	 * <p>このノードに対して指定のプロパティを登録します。</p>
+	 * @param key プロパティキー
+	 * @param value プロパティ値
+	 */
 	public void setProperty(String key, boolean value) {
 		this.node.setProperty(key, Boolean.valueOf(value));
 	}
 	
+	/**
+	 * <p>このノードから指定のプロパティキーにに紐づくあチアを取得します。</p>
+	 * @param key プロパティキー
+	 * @param value プロパティ値
+	 */
 	public String getProperty(String key) {
 		return (String)this.node.getProperty(key);
 	}
 	
+	/**
+	 * <p>このノードから外向きに関連するノードを追加します。</p>
+	 * 引数に指定されたリレーションラベルと、ノードをこのノードから外向きの関連として登録します。
+	 * @param label リレーションラベル
+	 * @param node  ノード
+	 */
 	public void addOutGoingRelation(RelationshipType label, Node node) {
 		this.node.createRelationshipTo(node.node, label);
 	}
 	
+	/**
+	 * このノードのIDを取得する。
+	 * @return このノードのＩＤ
+	 */
 	public long getID() {
 		return this.id;
 	}
