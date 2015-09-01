@@ -85,7 +85,7 @@ class Transaction implements Closeable {
 	
 	/**
 	 * <p>検索結果を取得する。（単一）</p>
-	 * 指定のCypherを実行し、単一のノードを取得します。<br/>
+	 * 指定のCypherを実行し、単一のノードを取得します。
 	 * 
 	 * @param cypher 実行対象のCypher
 	 * @return 取得したノード
@@ -103,7 +103,7 @@ class Transaction implements Closeable {
 	
 	/**
 	 * <p>検索結果を取得する。（複数）</p>
-	 * 指定のCypherを実行し、複数のノードを取得します。<br/>
+	 * 指定のCypherを実行し、複数のノードを取得します。
 	 * 
 	 * @param cypher 実行対象のCypher
 	 * @return 取得したノード

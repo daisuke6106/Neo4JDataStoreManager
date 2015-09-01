@@ -21,9 +21,9 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 	
 	/**
 	 * コンストラクタ<p>
-	 * デフォルトのプロパティファイルを元にプロパティファイルオブジェクトのインスタンスを生成する。<br/>
-	 * デフォルトのプロパティファイルは"properties/DataStoreManager.properties"を参照します。<br/>
-	 * <br/>
+	 * デフォルトのプロパティファイルを元にプロパティファイルオブジェクトのインスタンスを生成する。
+	 * デフォルトのプロパティファイルは"properties/DataStoreManager.properties"を参照します。
+	 * 
 	 * プロパティファイルが存在しない場合、例外が発生します。
 	 * 
 	 * @throws PropertyException プロパティファイルオブジェクトのインスタンス作成に失敗した場合
@@ -34,8 +34,8 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 	
 	/**
 	 * コンストラクタ<p>
-	 * 指定のプロパティファイルを元にプロパティファイルオブジェクトのインスタンスを生成する。<br/>
-	 * <br/>
+	 * 指定のプロパティファイルを元にプロパティファイルオブジェクトのインスタンスを生成する。
+	 * 
 	 * プロパティファイルが存在しない場合、例外が発生します。
 	 * 
 	 * @param file プロパティファイル
@@ -46,20 +46,20 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 	}
 	
 	/**
-	 * このプロパティファイルからデフォルトのデータストアパラメータオブジェクトを生成し、返却する。<p/>
-	 * このプロパティから"datastore.type"の値を取得し、その設定値に紐づくデータストアへの設定パラメータを収集し、データストアパラメータインスタンスを作成、返却します。<br/>
-	 * <br/>
-	 * たとえば、<br/>
-	 * datastore.type=oracleの場合、<br/>
-	 * <br/>
-	 * ・"datastore.oracle.url"<br/>
-	 * ・"datastore.oracle.sid"<br/>
-	 * ・"datastore.oracle.user"<br/>
-	 * ・"datastore.oracle.password"<br/>
-	 * <br/>
-	 * の値を収集し、データストアパラメータへ設定し、そのインスタンスを返却します。<br/>
-	 * <br/>
-	 * プロパティファイルに値が設定されていないなど、プロパティファイルからデータストアパラメータクラスの生成に失敗した場合、例外が送出されます。<br/>
+	 * このプロパティファイルからデフォルトのデータストアパラメータオブジェクトを生成し、返却する。
+	 * このプロパティから"datastore.type"の値を取得し、その設定値に紐づくデータストアへの設定パラメータを収集し、データストアパラメータインスタンスを作成、返却します。
+	 * 
+	 * たとえば、
+	 * datastore.type=oracleの場合、
+	 * 
+	 * ・"datastore.oracle.url"
+	 * ・"datastore.oracle.sid"
+	 * ・"datastore.oracle.user"
+	 * ・"datastore.oracle.password"
+	 * 
+	 * の値を収集し、データストアパラメータへ設定し、そのインスタンスを返却します。
+	 * 
+	 * プロパティファイルに値が設定されていないなど、プロパティファイルからデータストアパラメータクラスの生成に失敗した場合、例外が送出されます。
 	 * 
 	 * @return データストアパラメータ
 	 * @throws Neo4JDataStoreManagerException データストアパラメータの生成に失敗した場合
@@ -92,20 +92,20 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 	
 
 	/**
-	 * このプロパティファイルから指定の名称のデータストアパラメータオブジェクトを生成し、返却する。<p/>
-	 * 引数に"USERS"が設定されていた場合、このプロパティから"datastore.type.USERS"の値を取得し、その設定値に紐づくデータストアへの設定パラメータを収集し、データストアパラメータインスタンスを作成、返却します。<br/>
-	 * <br/>
-	 * たとえば、<br/>
-	 * datastore.type.USERS=oracleの場合、<br/>
-	 * <br/>
-	 * ・"datastore.oracle.url.USERS"<br/>
-	 * ・"datastore.oracle.sid.USERS"<br/>
-	 * ・"datastore.oracle.user.USERS"<br/>
-	 * ・"datastore.oracle.password.USERS"<br/>
-	 * <br/>
-	 * の値を収集し、データストアパラメータへ設定し、そのインスタンスを返却します。<br/>
-	 * <br/>
-	 * プロパティファイルに値が設定されていないなど、プロパティファイルからデータストアパラメータクラスの生成に失敗した場合、例外が送出されます。<br/>
+	 * このプロパティファイルから指定の名称のデータストアパラメータオブジェクトを生成し、返却する。
+	 * 引数に"USERS"が設定されていた場合、このプロパティから"datastore.type.USERS"の値を取得し、その設定値に紐づくデータストアへの設定パラメータを収集し、データストアパラメータインスタンスを作成、返却します。
+	 * 
+	 * たとえば、
+	 * datastore.type.USERS=oracleの場合、
+	 * 
+	 * ・"datastore.oracle.url.USERS"
+	 * ・"datastore.oracle.sid.USERS"
+	 * ・"datastore.oracle.user.USERS"
+	 * ・"datastore.oracle.password.USERS"
+	 * 
+	 * の値を収集し、データストアパラメータへ設定し、そのインスタンスを返却します。
+	 * 
+	 * プロパティファイルに値が設定されていないなど、プロパティファイルからデータストアパラメータクラスの生成に失敗した場合、例外が送出されます。
 	 * 
 	 * @return データストアパラメータ
 	 * @throws Neo4JDataStoreManagerException データストアパラメータの生成に失敗した場合
@@ -122,18 +122,18 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 	}
 	
 	/**
-	 * 指定のプロパティキーに紐づく名称を取得します。<p/>
-	 * プロパティファイルに以下のような定義がなされていた場合、以下のようなリストを返却します。<br/>
-	 * <br/>
-	 * 引数に"propertykey"<br/>
-	 * <br/>
-	 * propertykey=aaa<br/>
-	 * propertykey.TEST01=bbb<br/>
-	 * propertykey.TEST02=ccc<br/>
-	 * <br/>
-	 * が定義されていた場合、返却のリストには<br/>
-	 * TEST01,TEST02を保持したリストを返却します。<br/>
-	 * <br/>
+	 * 指定のプロパティキーに紐づく名称を取得します。
+	 * プロパティファイルに以下のような定義がなされていた場合、以下のようなリストを返却します。
+	 * 
+	 * 引数に"propertykey"
+	 * 
+	 * propertykey=aaa
+	 * propertykey.TEST01=bbb
+	 * propertykey.TEST02=ccc
+	 * 
+	 * が定義されていた場合、返却のリストには
+	 * TEST01,TEST02を保持したリストを返却します。
+	 * 
 	 * 引数にnullが設定された、存在しないプロパティキーを指定された場合、ドットのあとに続く名称が存在しない場合、空のリストを返却します。
 	 * 
 	 * @param key プロパティキー
@@ -152,10 +152,10 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 	}
 	
 	/**
-	 * このプロパティキーを指定の名称で補完した値を返却します。<p/>
-	 * 例えば、"datastore.type"、nameの値が"USERS"とした場合、<br/>
-	 * プロパティファイルから"datastore.type.USERS"のキーに設定されている値を取得して返却します。<br/>
-	 * <br/>
+	 * このプロパティキーを指定の名称で補完した値を返却します。
+	 * 例えば、"datastore.type"、nameの値が"USERS"とした場合、
+	 * プロパティファイルから"datastore.type.USERS"のキーに設定されている値を取得して返却します。
+	 * 
 	 * 取得出来なかった場合、nullが取得される。
 	 * 
 	 * @param key プロパティキー

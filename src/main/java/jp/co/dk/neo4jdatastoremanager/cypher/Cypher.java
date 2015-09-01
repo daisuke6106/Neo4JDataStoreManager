@@ -23,8 +23,8 @@ public class Cypher implements Cloneable {
 	private List<CypherParameter> cypherParameter = new ArrayList<CypherParameter>();
 	
 	/**
-	 * コンストラクタ<p/>
-	 * 指定のCypherを表す文字列を元に、Cypherオブジェクトのインスタンスを生成します。<br/>
+	 * コンストラクタ
+	 * 指定のCypherを表す文字列を元に、Cypherオブジェクトのインスタンスを生成します。
 	 * Cypher本文がnull、または空文字の場合例外を送出します。
 	 * 
 	 * @param cypher Cypher本文の文字列
@@ -47,7 +47,7 @@ public class Cypher implements Cloneable {
 	}
 	
 	/**
-	 * 指定のCypherオブジェクトを本クラスのCypherの最初に追加します。<p/>
+	 * 指定のCypherオブジェクトを本クラスのCypherの最初に追加します。
 	 * 引数に指定されたCypherオブジェクトが持つCypherを表す文字列、パラメータともに最初に追加します。
 	 * @param cypher Cypherオブジェクト
 	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
@@ -73,7 +73,7 @@ public class Cypher implements Cloneable {
 	}
 	
 	/**
-	 * 指定のCypherオブジェクトを本クラスのCypherの末尾に追加します。<p/>
+	 * 指定のCypherオブジェクトを本クラスのCypherの末尾に追加します。
 	 * 引数に指定されたCypherオブジェクトが持つCypherを表す文字列、パラメータともに末尾に追加します。
 	 * @param cypher Cypherオブジェクト
 	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合

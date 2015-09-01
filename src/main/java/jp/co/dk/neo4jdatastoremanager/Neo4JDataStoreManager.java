@@ -48,7 +48,7 @@ public class Neo4JDataStoreManager implements Closeable {
 	}
 	
 	/**
-	 * このデータストア管理クラスが管理しているすべてのデータストアに対してトランザクションを開始します。<p/>
+	 * このデータストア管理クラスが管理しているすべてのデータストアに対してトランザクションを開始します。
 	 * トランザクション開始処理に失敗した場合、例外を送出します。
 	 * 
 	 * @throws Neo4JDataStoreManagerException トランザクション開始に失敗した場合
@@ -108,7 +108,7 @@ public class Neo4JDataStoreManager implements Closeable {
 	}
 	
 	/**
-	 * <p>このデータストア管理クラスが管理しているすべてのデータストアに対してトランザクションを終了します。<p/>
+	 * <p>このデータストア管理クラスが管理しているすべてのデータストアに対してトランザクションを終了します。
 	 * トランザクション終了処理に失敗した場合、例外を送出します。
 	 * 
 	 * @throws Neo4JDataStoreManagerException トランザクション終了に失敗した場合

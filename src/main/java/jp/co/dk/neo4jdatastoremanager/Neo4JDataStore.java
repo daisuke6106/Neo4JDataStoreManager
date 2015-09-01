@@ -12,7 +12,7 @@ import static jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessag
 
 /**
  * <p>DataBaseDataStoreは、単一のデータベースのデータストアを表すクラスです。</p>
- * 単一の接続先に対するトランザクション管理、Cypherの実行、実行されたCypherの履歴保持を行う。<br/>
+ * 単一の接続先に対するトランザクション管理、Cypherの実行、実行されたCypherの履歴保持を行う。
  * 
  * @version 0.1
  * @author D.Kanno
@@ -64,7 +64,7 @@ public class Neo4JDataStore {
 	
 	/**
 	 * <p>検索結果を取得する。（単一）</p>
-	 * 指定のCypherを実行し、単一のノードを取得します。<br/>
+	 * 指定のCypherを実行し、単一のノードを取得します。
 	 * 
 	 * @param cypher 実行対象のCypher
 	 * @return 取得したノード
@@ -76,7 +76,7 @@ public class Neo4JDataStore {
 	
 	/**
 	 * <p>検索結果を取得する。（複数）</p>
-	 * 指定のCypherを実行し、複数のノードを取得します。<br/>
+	 * 指定のCypherを実行し、複数のノードを取得します。
 	 * 
 	 * @param cypher 実行対象のCypher
 	 * @return 取得したノード
@@ -99,7 +99,7 @@ public class Neo4JDataStore {
 	
 	/**
 	 * <p>ロールバックを実施する。</p>
-	 * 現在開始済みのトランザクションに対して、ロールバック処理を実施します。<br/>
+	 * 現在開始済みのトランザクションに対して、ロールバック処理を実施します。
 	 * トランザクションが開始されていない状態で実行された場合、例外を送出します。
 	 * @throws Neo4JDataStoreManagerException トランザクションが開始されていない状態で実行された場合
 	 */
@@ -110,7 +110,7 @@ public class Neo4JDataStore {
 	
 	/**
 	 * <p>トランザクションのクローズ処理を実施する。</p>
-	 * 現在開始済みのトランザクションに対して、クローズ処理を実施します。<br/>
+	 * 現在開始済みのトランザクションに対して、クローズ処理を実施します。
 	 * トランザクションが開始されていない状態で実行された場合、例外を送出します。
 	 * @throws Neo4JDataStoreManagerException トランザクションが開始されていない状態で実行された場合
 	 */
