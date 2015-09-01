@@ -28,6 +28,7 @@ public class Neo4JDataStoreManagerException  extends AbstractMessageException {
 	 * 指定のメッセージで例外を生成します。
 	 * 
 	 * @param msg メッセージ定数インスタンス
+	 * @param param 埋め込み文字
 	 * @since 1.0
 	 */
 	public Neo4JDataStoreManagerException(Neo4JDataStoreManagerMessage msg, String param){
@@ -40,6 +41,7 @@ public class Neo4JDataStoreManagerException  extends AbstractMessageException {
 	 * 指定のメッセージで例外を生成します。
 	 * 
 	 * @param msg メッセージ定数インスタンス
+	 * @param param 埋め込み文字
 	 * @since 1.0
 	 */
 	public Neo4JDataStoreManagerException(Neo4JDataStoreManagerMessage msg, String... param){

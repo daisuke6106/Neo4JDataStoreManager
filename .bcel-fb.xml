@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1441125128438" analysisTimestamp="1441125128445" release="">
+  <Project projectName="">
+    <Jar>/home/dk/git/Neo4JDataStoreManager/neo4j_datastoremanager_0.1.0.jar</Jar>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/aspectjrt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-beanutils-1.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-beanutils-core-1.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-collections-3.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-configuration-1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-digester-1.8.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-lang-2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-logging-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/geronimo-jta_1.1_spec-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jackson-core-asl-1.9.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jackson-jaxrs-1.9.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jackson-mapper-asl-1.9.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jersey-client-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jersey-core-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jsr311-api-1.1.2.r612.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/log4j-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/log5j-2.1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/logger_1.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/lucene-core-3.6.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/message_1.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/neo4j-kernel-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/neo4j-lucene-index-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/neo4j-rest-graphdb-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/property_1.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/server-api-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/test/jmockit-coverage.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/test/jmockit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/test/junit-4.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/test/testtemplate_1.0.0.jar</AuxClasspathEntry>
+    <SrcDir>/home/dk/git/Neo4JDataStoreManager/src/main/java</SrcDir>
+  </Project>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jp.co.dk.aspect.MethodTrace">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="1" end="65" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Class>
+    <Field classname="jp.co.dk.aspect.MethodTrace" name="nestlevel" signature="I" isStatic="true">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Field>
+    <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="7" end="7" startBytecode="1" endBytecode="1" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jp.co.dk.aspect.MethodTrace">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="1" end="65" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Class>
+    <Method classname="jp.co.dk.aspect.MethodTrace" name="ajc$afterReturning$jp_co_dk_aspect_MethodTrace$3$4d91f0e5" signature="(Ljava/lang/Object;Lorg/aspectj/lang/JoinPoint$StaticPart;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="40" end="53" startBytecode="0" endBytecode="334" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Method>
+    <Field classname="jp.co.dk.aspect.MethodTrace" name="nestlevel" signature="I" isStatic="true">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Field>
+    <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="52" end="52" startBytecode="185" endBytecode="185" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jp.co.dk.aspect.MethodTrace">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="1" end="65" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Class>
+    <Method classname="jp.co.dk.aspect.MethodTrace" name="ajc$afterThrowing$jp_co_dk_aspect_MethodTrace$4$4d91f0e5" signature="(Ljava/lang/Exception;Lorg/aspectj/lang/JoinPoint$StaticPart;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="56" end="65" startBytecode="0" endBytecode="282" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Method>
+    <Field classname="jp.co.dk.aspect.MethodTrace" name="nestlevel" signature="I" isStatic="true">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Field>
+    <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="64" end="64" startBytecode="149" endBytecode="149" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jp.co.dk.aspect.MethodTrace">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="1" end="65" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Class>
+    <Method classname="jp.co.dk.aspect.MethodTrace" name="ajc$before$jp_co_dk_aspect_MethodTrace$1$4d91f0e5" signature="(Lorg/aspectj/lang/JoinPoint;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="12" end="33" startBytecode="0" endBytecode="665" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Method>
+    <Field classname="jp.co.dk.aspect.MethodTrace" name="nestlevel" signature="I" isStatic="true">
+      <SourceLine classname="jp.co.dk.aspect.MethodTrace" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+    </Field>
+    <SourceLine classname="jp.co.dk.aspect.MethodTrace" start="12" end="12" startBytecode="5" endBytecode="5" sourcefile="MethodTrace.aj" sourcepath="jp/co/dk/aspect/MethodTrace.aj"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="jp.co.dk.neo4jdatastoremanager.cypher.StringCypherParameter">
+      <SourceLine classname="jp.co.dk.neo4jdatastoremanager.cypher.StringCypherParameter" start="1" end="45" sourcefile="StringCypherParameter.java" sourcepath="jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java"/>
+    </Class>
+    <Method classname="jp.co.dk.neo4jdatastoremanager.cypher.StringCypherParameter" name="getParameter" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="jp.co.dk.neo4jdatastoremanager.cypher.StringCypherParameter" start="13" end="13" startBytecode="0" endBytecode="187" sourcefile="StringCypherParameter.java" sourcepath="jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.neo4jdatastoremanager.cypher.StringCypherParameter" start="13" end="13" startBytecode="24" endBytecode="24" sourcefile="StringCypherParameter.java" sourcepath="jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SUITABLE_CONSTRUCTOR" priority="1" rank="14" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage">
+      <SourceLine classname="jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage" start="19" end="44" sourcefile="Neo4JDataStoreManagerMessage.java" sourcepath="jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 2 Sep 2015 01:32:08 +0900" total_classes="17" referenced_classes="104" total_bugs="6" total_size="789" num_packages="6" java_version="1.8.0_20" vm_version="25.20-b23" cpu_seconds="7.80" clock_seconds="2.76" peak_mbytes="190.68" alloc_mbytes="1749.50" gc_seconds="0.06" priority_2="5" priority_1="1">
+    <PackageStats package="jp.co.dk.aspect" total_bugs="4" total_types="1" total_size="60" priority_2="4">
+      <ClassStats class="jp.co.dk.aspect.MethodTrace" sourceFile="MethodTrace.aj" interface="false" size="60" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <PackageStats package="jp.co.dk.neo4jdatastoremanager" total_bugs="0" total_types="6" total_size="450">
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Neo4JDataStore" sourceFile="Neo4JDataStore.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Neo4JDataStoreManager" sourceFile="Neo4JDataStoreManager.java" interface="false" size="100" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Neo4JDataStoreParameter" sourceFile="Neo4JDataStoreParameter.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Node" sourceFile="Node.java" interface="false" size="93" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.NodeSelector" sourceFile="NodeSelector.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Transaction" sourceFile="Transaction.java" interface="false" size="82" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jp.co.dk.neo4jdatastoremanager.cypher" total_bugs="1" total_types="5" total_size="181" priority_2="1">
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.cypher.BooleanCypherParameter" sourceFile="BooleanCypherParameter.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.cypher.Cypher" sourceFile="Cypher.java" interface="false" size="95" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.cypher.CypherParameter" sourceFile="CypherParameter.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.cypher.NumericCypherParameter" sourceFile="NumericCypherParameter.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.cypher.StringCypherParameter" sourceFile="StringCypherParameter.java" interface="false" size="32" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="jp.co.dk.neo4jdatastoremanager.exception" total_bugs="0" total_types="3" total_size="27">
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerCypherException" sourceFile="Neo4JDataStoreManagerCypherException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerException" sourceFile="Neo4JDataStoreManagerException.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerFatalException" sourceFile="Neo4JDataStoreManagerFatalException.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="jp.co.dk.neo4jdatastoremanager.message" total_bugs="1" total_types="1" total_size="22" priority_1="1">
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage" sourceFile="Neo4JDataStoreManagerMessage.java" interface="false" size="22" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="jp.co.dk.neo4jdatastoremanager.property" total_bugs="0" total_types="1" total_size="49">
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.property.Neo4JDataStoreManagerProperty" sourceFile="Neo4JDataStoreManagerProperty.java" interface="false" size="49" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="233" invocations="682" avgMicrosecondsPerInvocation="342" maxMicrosecondsPerInvocation="14948" standardDeviationMircosecondsPerInvocation="961"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="150" invocations="135" avgMicrosecondsPerInvocation="1111" maxMicrosecondsPerInvocation="22829" standardDeviationMircosecondsPerInvocation="2508"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="149" invocations="136" avgMicrosecondsPerInvocation="1098" maxMicrosecondsPerInvocation="19865" standardDeviationMircosecondsPerInvocation="2081"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="137" invocations="144" avgMicrosecondsPerInvocation="957" maxMicrosecondsPerInvocation="12817" standardDeviationMircosecondsPerInvocation="1887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="132" invocations="104" avgMicrosecondsPerInvocation="1271" maxMicrosecondsPerInvocation="28903" standardDeviationMircosecondsPerInvocation="3835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="106" invocations="138" avgMicrosecondsPerInvocation="771" maxMicrosecondsPerInvocation="8498" standardDeviationMircosecondsPerInvocation="1250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="99" invocations="135" avgMicrosecondsPerInvocation="739" maxMicrosecondsPerInvocation="13331" standardDeviationMircosecondsPerInvocation="1670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="93" invocations="395" avgMicrosecondsPerInvocation="236" maxMicrosecondsPerInvocation="10074" standardDeviationMircosecondsPerInvocation="705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="90" invocations="136" avgMicrosecondsPerInvocation="666" maxMicrosecondsPerInvocation="7896" standardDeviationMircosecondsPerInvocation="1091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="89" invocations="131" avgMicrosecondsPerInvocation="681" maxMicrosecondsPerInvocation="6819" standardDeviationMircosecondsPerInvocation="1082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="80" invocations="104" avgMicrosecondsPerInvocation="777" maxMicrosecondsPerInvocation="12702" standardDeviationMircosecondsPerInvocation="2018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="50" invocations="147" avgMicrosecondsPerInvocation="345" maxMicrosecondsPerInvocation="9436" standardDeviationMircosecondsPerInvocation="1127"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="50" invocations="642" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="4570" standardDeviationMircosecondsPerInvocation="259"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="49" invocations="136" avgMicrosecondsPerInvocation="364" maxMicrosecondsPerInvocation="9222" standardDeviationMircosecondsPerInvocation="1072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="138" avgMicrosecondsPerInvocation="329" maxMicrosecondsPerInvocation="22557" standardDeviationMircosecondsPerInvocation="1945"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="42" invocations="686" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="3257" standardDeviationMircosecondsPerInvocation="184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="37" invocations="104" avgMicrosecondsPerInvocation="357" maxMicrosecondsPerInvocation="6894" standardDeviationMircosecondsPerInvocation="998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="35" invocations="17" avgMicrosecondsPerInvocation="2082" maxMicrosecondsPerInvocation="15292" standardDeviationMircosecondsPerInvocation="4171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="34" invocations="104" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="7473" standardDeviationMircosecondsPerInvocation="1073"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="33" invocations="104" avgMicrosecondsPerInvocation="324" maxMicrosecondsPerInvocation="8713" standardDeviationMircosecondsPerInvocation="1144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="33" invocations="17" avgMicrosecondsPerInvocation="1975" maxMicrosecondsPerInvocation="12546" standardDeviationMircosecondsPerInvocation="2918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="33" invocations="104" avgMicrosecondsPerInvocation="321" maxMicrosecondsPerInvocation="5057" standardDeviationMircosecondsPerInvocation="821"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="29" invocations="104" avgMicrosecondsPerInvocation="280" maxMicrosecondsPerInvocation="4890" standardDeviationMircosecondsPerInvocation="815"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

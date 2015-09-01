@@ -79,7 +79,7 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 	 * このプロパティファイルから
 	 * 
 	 * @return 名称をキーとデータストアパラメータインスタンスが紐づくマップオブジェクト
-	 * @throws Neo4JDataStoreManagerException　データストアパラメータの生成に失敗した場合
+	 * @throws Neo4JDataStoreManagerException データストアパラメータの生成に失敗した場合
 	 */
 	public Map<String, Neo4JDataStoreParameter> getDataStoreParameters() throws Neo4JDataStoreManagerException {
 		Map<String, Neo4JDataStoreParameter> configurationMap = new HashMap<String, Neo4JDataStoreParameter>();
@@ -107,6 +107,7 @@ public class Neo4JDataStoreManagerProperty extends PropertiesFile {
 	 * 
 	 * プロパティファイルに値が設定されていないなど、プロパティファイルからデータストアパラメータクラスの生成に失敗した場合、例外が送出されます。
 	 * 
+	 * @param name データストアパラメータ名称
 	 * @return データストアパラメータ
 	 * @throws Neo4JDataStoreManagerException データストアパラメータの生成に失敗した場合
 	 */

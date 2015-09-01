@@ -1,0 +1,797 @@
+Starting audit...
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:0: Missing package-info.java file.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:9: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:11: '.*' 形式のインポートの使用は避けるべきです - jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:11: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:13: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:16: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:21: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:21:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:22: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:23:43: 変数 'dataBaseAccessParameter' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:24: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:25: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:26:31: 変数 'transaction' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:27: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:28: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:29:32: 変数 'cypherList' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:30: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:31: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:32: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:32:56: 変数 'exceptionList' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:33: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:34: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:35:26: 変数 'logger' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:36: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:37: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:39: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:42:31: Parameter dataBaseAccessParameter should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:42:55: 'dataBaseAccessParameter' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:43: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:46: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:47: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:52:9: メソッド 'startTransaction' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:52:47: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:53: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:55: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:56: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:61:9: メソッド 'createNode' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:64: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:65: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:68: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:73: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:73:9: メソッド 'selectNode' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:73:32: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:73:54: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:76: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:77: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:80: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:85: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:85:9: メソッド 'selectNodes' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:85:39: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:85:61: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:88: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:89: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:95:9: メソッド 'commit' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:95:37: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:96: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:96: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:99: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:100: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:106:9: メソッド 'rollback' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:106:39: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:107: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:107: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:110: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:111: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:117:9: メソッド 'finishTransaction' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:117:48: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:118: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:118: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:122: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:123: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:128:9: メソッド 'isTransaction' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:129: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:132: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:133: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:138:9: メソッド 'hasError' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:139: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:142: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:143:9: メソッド 'hashCode' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:149:70: Avoid inline conditionals.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:150: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:154:9: メソッド 'equals' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:155:31: Parameter obj should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:156: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:158: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:160: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:164: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:166: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:172:9: メソッド 'toString' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:176: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStore.java:181: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:12: '.*' 形式のインポートの使用は避けるべきです - jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:12: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:14: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:16: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:21: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:21:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:22: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:23:34: 変数 'defaultDataStore' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:24: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:25: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:26: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:26:47: 変数 'dataStores' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:27: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:28: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:29:49: 変数 'dataStoreManagerProperty' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:30: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:31: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:32:26: 変数 'logger' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:33: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:34: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:36: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:37: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:41: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:41:38: Parameter dataStoreManagerProperty should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:41:68: 'dataStoreManagerProperty' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:41:101: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:41:131: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:42: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:43: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:43: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:44: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:45: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:46: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:47: 'for' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:47: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:49: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:50: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:53: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:56:9: メソッド 'startTrunsaction' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:56:47: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:62: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:63: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:67: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:71:9: メソッド 'getDataAccessObject' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:71:51: Parameter name should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:73: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:76: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:77: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:79: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:82:9: メソッド 'commit' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:82:37: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:84: 'for' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:84: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:86: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:87: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:89: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:92:9: メソッド 'rollback' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:92:39: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:94: 'for' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:94: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:96: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:97: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:99: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:102:9: メソッド 'hasError' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:103: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:104: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:105: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:109: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:110: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:113: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:116:9: メソッド 'finishTrunsaction' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:116:48: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:119: 'for' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:119: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:122: 'for' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:122: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:125: 'for' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:125: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:128:9: メソッド 'hashCode' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:133: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:133:57: Avoid inline conditionals.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:136: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:136:63: Avoid inline conditionals.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:140:9: メソッド 'equals' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:141:31: Parameter obj should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:142: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:144: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:146: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:150: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:152: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:155: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:157: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:162:9: メソッド 'toString' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:173:9: メソッド 'close' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:181: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreManager.java:182: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:4: '.*' 形式のインポートの使用は避けるべきです - jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:4: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:6: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:9: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:14: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:14:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:15: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:16:26: 変数 'neo4jServer' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:17: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:18: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:19:26: 変数 'neo4jUser' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:20: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:21: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:22:26: 変数 'neo4jPassword' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:23: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:24: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:25:27: 変数 'isAuthSet' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:26: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:27: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:32: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:32:40: Parameter neo4jServer should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:32:47: 'neo4jServer' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:32:67: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:33: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:33: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:37: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:38: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:45: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:45:40: Parameter neo4jServer should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:45:47: 'neo4jServer' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:45:60: Parameter neo4jUser should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:45:67: 'neo4jUser' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:45:78: Parameter neo4jPass should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:45:103: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:46: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:46: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:47: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:47: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:48: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:48: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:55:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:55:9: メソッド 'getNeo4jServer' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:59:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:59:9: メソッド 'getNeo4jUser' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:63:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:63:9: メソッド 'getNeo4jPassword' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:67:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:67:9: メソッド 'isAuthSet' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:70: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:71:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:71:9: メソッド 'createDataStore' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:75:9: メソッド 'hashCode' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:79:54: Avoid inline conditionals.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:79:56: '1231' はマジックナンバーです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:79:63: '1237' はマジックナンバーです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:81: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:81:60: Avoid inline conditionals.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:83: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:83:58: Avoid inline conditionals.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:85: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:85:56: Avoid inline conditionals.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:89:9: メソッド 'equals' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:90:31: Parameter obj should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:91: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:93: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:95: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:98: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:101: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:103: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:106: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:108: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:111: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:113: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:118:9: メソッド 'toString' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Neo4JDataStoreParameter.java:131: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:14: '.*' 形式のインポートの使用は避けるべきです - jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:14: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:16: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:18: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:23: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:23:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:24: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:25:24: 変数 'id' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:26: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:27: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:28:42: 変数 'node' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:29: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:30: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:34:14: Parameter node should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:34:37: 'node' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:38: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:39: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:44:9: メソッド 'getOutGoingNodes' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:44:44: Parameter selector should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:46: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:49:48: 'node' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:56: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:57: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:61:9: メソッド 'getOutGoingNodes' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:63: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:70: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:71: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:75:9: メソッド 'addLabel' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:75:30: Parameter label should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:78: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:79: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:84: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:88: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:88:9: メソッド 'setProperty' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:88:33: Parameter properties should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:88:72: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:89: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:92: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:92: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:94:63: 'cast' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:95:59: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:96: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:96:65: 'cast' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:98: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:98:65: 'cast' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:100: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:104: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:105: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:110:9: メソッド 'setProperty' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:110:33: Parameter key should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:110:45: Parameter value should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:113: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:114: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:119:9: メソッド 'setProperty' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:119:33: Parameter key should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:119:45: Parameter value should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:122: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:123: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:128:9: メソッド 'setProperty' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:128:33: Parameter key should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:128:45: Parameter value should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:131: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:132: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:137:9: メソッド 'getProperty' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:137:35: Parameter key should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:138:32: 'cast' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:140: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:141: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:147:9: メソッド 'addOutGoingRelation' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:147:41: Parameter label should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:147:65: Parameter node should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:147:70: 'node' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:150: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:151: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:155:9: メソッド 'getID' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:159:9: メソッド 'hashCode' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:163:63: '32' はマジックナンバーです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:167:9: メソッド 'equals' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:168:31: Parameter obj should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:169: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:171: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:173: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:176: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:181:9: メソッド 'toString' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Node.java:189: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/NodeSelector.java:3: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/NodeSelector.java:4:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/NodeSelector.java:4:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:12: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:19: '.*' 形式のインポートの使用は避けるべきです - jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:19: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:21: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:23: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:28: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:28:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:29: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:30:43: 変数 'parameter' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:31: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:32: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:33:33: 変数 'restApiFacade' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:34: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:35: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:36:37: 変数 'graphDatabaseService' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:37: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:38: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:39:49: 変数 'transaction' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:40: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:41: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:42:26: 変数 'logger' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:43: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:44: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:47: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:49: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:49:21: Parameter parameter should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:49:45: 'parameter' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:49:63: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:50: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:50: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:53: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:53:118: ',' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:55: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:57: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:59: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:61: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:62: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:69: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:70: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:77: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:78: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:85: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:86: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:89: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:94: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:94:32: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:94:54: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:95: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:95: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:96: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:98: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:103: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:104: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:107: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:112: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:112:39: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:112:61: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:113: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:113: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:115: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:116: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:117: 'while' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:117: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:117:22: 'while' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:120: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:126: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:128: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:137: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:137:56: Avoid inline conditionals.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:142:31: Parameter obj should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:143: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:145: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:147: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:151: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:153: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/Transaction.java:161: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:0: Missing package-info.java file.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:3: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:3:53: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:4: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:4:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:5:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:5:27: 変数 'parameter' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:6: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:7:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:7:32: Parameter parameter should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:7:40: 'parameter' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:15: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:17:31: Parameter object should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:18: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:19: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:20: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:21: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:24: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:29: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/BooleanCypherParameter.java:36: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:8: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:9: '.*' 形式のインポートの使用は避けるべきです - jp.co.dk.neo4jdatastoremanager.message.Neo4JDataStoreManagerMessage.*。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:9: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:11: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:13: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:18: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:18:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:19: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:21: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:22: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:23: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:24: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:25: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:29: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:31: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:33: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:33:23: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:33:30: 'cypher' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:33:45: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:34: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:34: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:34: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:37: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:38: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:42: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:44: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:44:9: メソッド 'appendTop' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:44:33: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:44:40: 'cypher' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:44:55: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:45: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:45: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:49: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:50: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:55: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:57: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:57:9: メソッド 'appendTop' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:57:33: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:57:40: 'cypher' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:57:55: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:58: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:58: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:59: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:60: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:65: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:66: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:70: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:72: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:72:9: メソッド 'append' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:72:30: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:72:37: 'cypher' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:72:52: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:73: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:73: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:73: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:77: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:78: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:83: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:85: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:85:9: メソッド 'append' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:85:30: Parameter cypher should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:85:37: 'cypher' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:85:52: Neo4JDataStoreManagerCypherException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:86: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:86: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:86: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:91: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:92: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:97:9: メソッド 'setParameter' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:97:36: Parameter parameter should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:97:53: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:101: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:102: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:107:9: メソッド 'setParameter' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:107:36: Parameter parameter should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:111: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:112: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:117:9: メソッド 'setParameter' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:117:36: Parameter parameter should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:121: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:122:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:122:9: メソッド 'getCypher' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:123: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:124:31: '=' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:124:32: '=' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:124:34: ';' の前にホワイトスペースがあります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:126: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:132: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:133: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:137:9: メソッド 'getParameter' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:139: 'for' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:139: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:139:27: '=' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:139:28: '=' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:139:32: '<=' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:139:34: '<=' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:139:129: '-' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:139:130: '-' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:142: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:143:9: メソッド 'hashCode' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:144: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:146: 'for' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:146: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:147:34: '*' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:147:34: '17' はマジックナンバーです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:149: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:150:9: メソッド 'equals' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:151:31: Parameter object should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:152: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:153: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:155: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:158: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:159:9: メソッド 'toString' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:161: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:171:44: '-' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:171:45: '-' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:176: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:177:9: メソッド 'clone' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:180:65: 'cast' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:181: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/Cypher.java:182: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/CypherParameter.java:3: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/CypherParameter.java:4: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/CypherParameter.java:4:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/CypherParameter.java:5:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/CypherParameter.java:6: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:3: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:3:53: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:4: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:4:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:5:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:5:23: 変数 'parameter' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:6: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:7:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:7:32: Parameter parameter should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:7:36: 'parameter' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:15: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:17:31: Parameter object should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:18: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:19: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:20: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:21: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:24: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:27:36: 'cast' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:27:53: '17L' はマジックナンバーです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/NumericCypherParameter.java:29: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:0: ファイルが新しい行で終了していません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:3: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:3:52: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:4: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:4:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:5:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:5:26: 変数 'parameter' は private とし、アクセッサメソッドを持つべきです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:6: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:7:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:7:31: Parameter parameter should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:7:38: 'parameter' がフィールドを隠しています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:9: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:15: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:17:31: Parameter object should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:18: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:19: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:20: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:21: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:24: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:28:60: '17' はマジックナンバーです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:33: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:38:55: '1000' はマジックナンバーです。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/cypher/StringCypherParameter.java:41: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:0: Missing package-info.java file.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:6: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:6: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:8: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:8:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:13: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:15: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:17: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:21: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:21:53: Parameter msg should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerCypherException.java:21:86: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:6: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:8: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:8:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:12: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:13: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:15: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:17: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:21:47: Parameter msg should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:21:80: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:24: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:25: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:27: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:29: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:34: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:34:47: Parameter msg should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:34:81: Parameter param should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:34:94: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:37: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:38: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:40: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:42: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:47: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:47:47: Parameter msg should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:47:81: Parameter param should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerException.java:47:97: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:6: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:6: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:8: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:8:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:13: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:15: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:17: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:21: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:21:52: Parameter msg should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:21:85: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:24: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:25: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:27: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:29: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:34: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:34:52: Parameter msg should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:34:86: Parameter param should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:34:99: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:37: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:38: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:40: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:42: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:47: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:47:52: Parameter msg should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:47:86: Parameter param should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/exception/Neo4JDataStoreManagerFatalException.java:47:102: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:0: Missing package-info.java file.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:7: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:9: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:13: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:13:90: '{' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:14: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:14:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:15: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:17: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:18: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:19: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:20: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:21: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:22: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:23: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:24: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:25: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:26: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:27: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:28: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:29: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:30: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:31: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:32: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:33: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:34: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:36: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:37: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:38: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:39: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:40: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:41: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:42:9: Javadoc コメントがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/message/Neo4JDataStoreManagerMessage.java:42:48: Parameter messageId should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:0: Missing package-info.java file.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:14: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:16: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:21: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:21:1: File contains tab characters (this is the first instance).
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:22: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:26: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:28: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:31:46: '(' の前にホワイトスペースがあります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:31:56: PropertyException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:34: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:35: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:38: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:40: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:44: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:44:46: '(' の前にホワイトスペースがあります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:44:47: Parameter file should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:44:67: PropertyException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:47: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:48: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:50: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:51: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:54: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:59: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:61: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:63: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:67: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:67:9: メソッド 'getDefaultDataStoreParameter' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:67:78: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:68:70: ')' の前にホワイトスペースがあります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:69:70: ')' の前にホワイトスペースがあります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:71: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:72: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:77: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:78: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:80: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:84: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:84:9: メソッド 'getDataStoreParameters' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:84:85: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:85: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:88: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:92: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:94: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:96: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:97: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:100: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:105: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:107: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:109: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:114: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:114:9: メソッド 'getDataStoreParameter' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:114:65: Parameter name should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:114:85: Neo4JDataStoreManagerException のクラス情報が取得できません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:118: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:119: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:124: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:125: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:128: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:130: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:134: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:137: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:139: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:143:9: メソッド 'getNameList' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:143:44: Parameter key should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:145: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:145: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:147:22: 'while' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:149:66: '+' の前にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:149:67: '+' の後にホワイトスペースがありません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:150: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:150: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:150: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:154: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:155: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:159: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:161: Line has trailing spaces.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:166:9: メソッド 'getStringWithName' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:166:44: Parameter key should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:166:56: Parameter name should be final.
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:167: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:168: 行が 80 文字を超えています。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:169: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:169:34: ')' の前にホワイトスペースがあります。
+/home/dk/git/Neo4JDataStoreManager/src/main/java/jp/co/dk/neo4jdatastoremanager/property/Neo4JDataStoreManagerProperty.java:172: Line has trailing spaces.
+Audit done.

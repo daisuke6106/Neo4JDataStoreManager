@@ -130,9 +130,9 @@ public class Node {
 	}
 	
 	/**
-	 * <p>このノードから指定のプロパティキーにに紐づくあチアを取得します。</p>
+	 * <p>このノードから指定のプロパティキーに紐づく値を取得します。</p>
 	 * @param key プロパティキー
-	 * @param value プロパティ値
+	 * @return 値
 	 */
 	public String getProperty(String key) {
 		return (String)this.node.getProperty(key);

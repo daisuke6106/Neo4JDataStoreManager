@@ -38,6 +38,7 @@ public class Cypher implements Cloneable {
 	/**
 	 * 指定のCypher言語の文字列を本クラスのCypherの最初に追加します。
 	 * @param cypher Cypher文字列
+	 * @return 本オブジェクトインスタンス
 	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
 	public Cypher appendTop(String cypher) throws Neo4JDataStoreManagerCypherException {
@@ -50,6 +51,7 @@ public class Cypher implements Cloneable {
 	 * 指定のCypherオブジェクトを本クラスのCypherの最初に追加します。
 	 * 引数に指定されたCypherオブジェクトが持つCypherを表す文字列、パラメータともに最初に追加します。
 	 * @param cypher Cypherオブジェクト
+	 * @return 本オブジェクトインスタンス
 	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
 	public Cypher appendTop(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
@@ -64,6 +66,7 @@ public class Cypher implements Cloneable {
 	/**
 	 * 指定のCypher言語の文字列を本クラスのCypherの末尾に追加します。
 	 * @param cypher Cypher文字列
+	 * @return 本オブジェクトインスタンス
 	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
 	public Cypher append(String cypher) throws Neo4JDataStoreManagerCypherException {
@@ -76,6 +79,7 @@ public class Cypher implements Cloneable {
 	 * 指定のCypherオブジェクトを本クラスのCypherの末尾に追加します。
 	 * 引数に指定されたCypherオブジェクトが持つCypherを表す文字列、パラメータともに末尾に追加します。
 	 * @param cypher Cypherオブジェクト
+	 * @return 本オブジェクトインスタンス
 	 * @throws Neo4JDataStoreManagerCypherException 引数に指定されたCypherがnullまたは空文字の場合
 	 */
 	public Cypher append(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
