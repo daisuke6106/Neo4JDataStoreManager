@@ -62,6 +62,30 @@ public class Neo4JDataStore {
 		return this.transaction.createNode();
 	}
 	
+	public String selectString(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		return this.transaction.selectString(cypher);
+	}
+	
+	public List<String> selectStringList(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		return this.transaction.selectStringList(cypher);
+	}
+	
+	public Integer selectInt(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		return this.transaction.selectInt(cypher);
+	}
+	
+	public List<Integer> selectIntList(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		return this.transaction.selectIntList(cypher);
+	}
+	
+	public Boolean selectBoolean(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		return this.transaction.selectBoolean(cypher);
+	}
+	
+	public List<Boolean> selectBooleanList(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		return this.transaction.selectBooleanList(cypher);
+	}
+	
 	/**
 	 * <p>検索結果を取得する。（単一）</p>
 	 * 指定のCypherを実行し、単一のノードを取得します。
@@ -82,8 +106,8 @@ public class Neo4JDataStore {
 	 * @return 取得したノード
 	 * @throws Neo4JDataStoreManagerCypherException Cypherの実行に失敗した場合
 	 */
-	public List<Node> selectNodes(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
-		return this.transaction.selectNodes(cypher);
+	public List<Node> selectNodeList(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		return this.transaction.selectNodeList(cypher);
 	}
 	
 	/**

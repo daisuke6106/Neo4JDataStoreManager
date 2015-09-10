@@ -83,6 +83,63 @@ class Transaction implements Closeable {
 		return new Node(this.graphDatabaseService.createNode());
 	}
 	
+	public String selectString(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
+		RestCypherQueryEngine queryEngine = new RestCypherQueryEngine(this.restApiFacade);
+		try {
+			return queryEngine.query(cypher.getCypher(), cypher.getParameter()).to(String.class).single();
+		} catch (NoSuchElementException e) {
+			return null;
+		}
+	}
+	
+	public List<String> selectStringList(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
+		RestCypherQueryEngine queryEngine = new RestCypherQueryEngine(this.restApiFacade);
+		Iterator<String> resultIterator = queryEngine.query(cypher.getCypher(), cypher.getParameter()).to(String.class).iterator();
+		List<String> strList = new ArrayList<>();
+		while(resultIterator.hasNext()) strList.add(resultIterator.next());
+		return strList;
+	}
+	
+	public Integer selectInt(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
+		RestCypherQueryEngine queryEngine = new RestCypherQueryEngine(this.restApiFacade);
+		try {
+			return queryEngine.query(cypher.getCypher(), cypher.getParameter()).to(Integer.class).single();
+		} catch (NoSuchElementException e) {
+			return null;
+		}
+	}
+	
+	public List<Integer> selectIntList(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
+		RestCypherQueryEngine queryEngine = new RestCypherQueryEngine(this.restApiFacade);
+		Iterator<Integer> resultIterator = queryEngine.query(cypher.getCypher(), cypher.getParameter()).to(Integer.class).iterator();
+		List<Integer> intList = new ArrayList<>();
+		while(resultIterator.hasNext()) intList.add(resultIterator.next());
+		return intList;
+	}
+	
+	public Boolean selectBoolean(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
+		RestCypherQueryEngine queryEngine = new RestCypherQueryEngine(this.restApiFacade);
+		try {
+			return queryEngine.query(cypher.getCypher(), cypher.getParameter()).to(Boolean.class).single();
+		} catch (NoSuchElementException e) {
+			return null;
+		}
+	}
+	
+	public List<Boolean> selectBooleanList(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
+		RestCypherQueryEngine queryEngine = new RestCypherQueryEngine(this.restApiFacade);
+		Iterator<Boolean> resultIterator = queryEngine.query(cypher.getCypher(), cypher.getParameter()).to(Boolean.class).iterator();
+		List<Boolean> boolList = new ArrayList<>();
+		while(resultIterator.hasNext()) boolList.add(resultIterator.next());
+		return boolList;
+	}
+	
 	/**
 	 * <p>検索結果を取得する。（単一）</p>
 	 * 指定のCypherを実行し、単一のノードを取得します。
@@ -109,11 +166,11 @@ class Transaction implements Closeable {
 	 * @return 取得したノード
 	 * @throws Neo4JDataStoreManagerCypherException Cypherの実行に失敗した場合
 	 */
-	public List<Node> selectNodes(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
+	public List<Node> selectNodeList(Cypher cypher) throws Neo4JDataStoreManagerCypherException {
 		if (cypher == null) throw new Neo4JDataStoreManagerCypherException(CYPHER_IS_NOT_SET);
-		List<Node> nodeList = new ArrayList<>();
 		RestCypherQueryEngine queryEngine = new RestCypherQueryEngine(this.restApiFacade);
 		Iterator<org.neo4j.graphdb.Node> resultIterator = queryEngine.query(cypher.getCypher(), cypher.getParameter()).to(org.neo4j.graphdb.Node.class).iterator();
+		List<Node> nodeList = new ArrayList<>();
 		while(resultIterator.hasNext()) nodeList.add(new Node(resultIterator.next()));
 		return nodeList;
 	}
