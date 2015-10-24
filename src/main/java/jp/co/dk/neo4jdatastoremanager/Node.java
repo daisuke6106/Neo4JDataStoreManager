@@ -149,6 +149,51 @@ public class Node {
 	}
 	
 	/**
+	 * <p>このノードから外向きに関連するノードを追加します。</p>
+	 * 引数に指定されたリレーションラベルと、ノードをこのノードから外向きの関連として登録します。<br/>
+	 * 尚、リレーションには指定のリレーションプロパティが設定されます。
+	 * 
+	 * @param label リレーションラベル
+	 * @param node  ノード
+	 * @param key   プロパティキー
+	 * @param value プロパティ値
+	 */
+	public void addOutGoingRelation(RelationshipType label, Node node, String key, String value) {
+		Relationship relationship = this.node.createRelationshipTo(node.node, label);
+		relationship.setProperty(key, value);
+	}
+	
+	/**
+	 * <p>このノードから外向きに関連するノードを追加します。</p>
+	 * 引数に指定されたリレーションラベルと、ノードをこのノードから外向きの関連として登録します。<br/>
+	 * 尚、リレーションには指定のリレーションプロパティが設定されます。<br/>
+	 * プロパティに設定できるのはString,Integer,Booleanのみであり、nullまたはそれ以外のクラスのインスタンスが設定されていた場合、例外を送出します。
+	 * 
+	 * @param label リレーションラベル
+	 * @param node  ノード
+	 * @param key   プロパティ一覧
+	 */
+	public void addOutGoingRelation(RelationshipType label, Node node, Map<String, Object> relationshipProperties) throws Neo4JDataStoreManagerException {
+		Relationship relationship = this.node.createRelationshipTo(node.node, label);
+		for ( Map.Entry<String, Object> relationshipProperty : relationshipProperties.entrySet() ) {
+			String key = relationshipProperty.getKey();
+			Object val = relationshipProperty.getValue();
+			if (val == null) throw new Neo4JDataStoreManagerException(PARAMETER_IS_FRAUD, key, "null");
+			if (val instanceof String) {
+				relationship.setProperty(key, (String)val);
+			} else if (val instanceof Integer){
+				relationship.setProperty(key, (Integer)val);
+			} else if (val instanceof Boolean) {
+				relationship.setProperty(key, (Boolean)val);
+			} else {
+				throw new Neo4JDataStoreManagerException(PARAMETER_IS_FRAUD, key, val.toString());
+			}
+			
+		}
+		
+	}
+	
+	/**
 	 * このノードのIDを取得する。
 	 * @return このノードのＩＤ
 	 */
