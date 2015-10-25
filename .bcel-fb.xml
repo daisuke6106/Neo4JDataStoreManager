@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.0.1" sequence="0" timestamp="1441125128438" analysisTimestamp="1441125128445" release="">
+<BugCollection version="3.0.1" sequence="0" timestamp="1445786469009" analysisTimestamp="1445786469021" release="">
   <Project projectName="">
-    <Jar>/home/dk/git/Neo4JDataStoreManager/neo4j_datastoremanager_0.1.0.jar</Jar>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/aspectjrt.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-beanutils-1.8.0.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-beanutils-core-1.8.0.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-collections-3.2.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-configuration-1.6.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-digester-1.8.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-lang-2.4.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/commons-logging-1.1.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/geronimo-jta_1.1_spec-1.1.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jackson-core-asl-1.9.7.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jackson-jaxrs-1.9.7.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jackson-mapper-asl-1.9.7.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jersey-client-1.9.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jersey-core-1.9.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/jsr311-api-1.1.2.r612.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/log4j-1.2.17.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/log5j-2.1.2.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/logger_1.0.2.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/lucene-core-3.6.2.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/message_1.0.0.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/neo4j-kernel-2.0.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/neo4j-lucene-index-2.0.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/neo4j-rest-graphdb-2.0.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/property_1.0.0.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/server-api-2.0.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/test/jmockit-coverage.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/test/jmockit.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/test/junit-4.10.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/git/Neo4JDataStoreManager/lib/test/testtemplate_1.0.0.jar</AuxClasspathEntry>
-    <SrcDir>/home/dk/git/Neo4JDataStoreManager/src/main/java</SrcDir>
+    <Jar>/home/dk/github_workspace/Neo4JDataStoreManager/neo4j_datastoremanager_0.2.0.jar</Jar>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/aspectjrt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/commons-beanutils-1.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/commons-beanutils-core-1.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/commons-collections-3.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/commons-configuration-1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/commons-digester-1.8.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/commons-lang-2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/commons-logging-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/geronimo-jta_1.1_spec-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/jackson-core-asl-1.9.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/jackson-jaxrs-1.9.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/jackson-mapper-asl-1.9.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/jersey-client-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/jersey-core-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/jsr311-api-1.1.2.r612.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/log4j-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/log5j-2.1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/logger_1.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/lucene-core-3.6.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/message_1.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/neo4j-kernel-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/neo4j-lucene-index-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/neo4j-rest-graphdb-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/property_1.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/server-api-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/test/jmockit-coverage.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/test/jmockit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/test/junit-4.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/Neo4JDataStoreManager/lib/test/testtemplate_1.0.0.jar</AuxClasspathEntry>
+    <SrcDir>/home/dk/github_workspace/Neo4JDataStoreManager/src/main/java</SrcDir>
   </Project>
   <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
     <Class classname="jp.co.dk.aspect.MethodTrace">
@@ -94,17 +94,17 @@
     </Class>
   </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Wed, 2 Sep 2015 01:32:08 +0900" total_classes="17" referenced_classes="104" total_bugs="6" total_size="789" num_packages="6" java_version="1.8.0_20" vm_version="25.20-b23" cpu_seconds="7.80" clock_seconds="2.76" peak_mbytes="190.68" alloc_mbytes="1749.50" gc_seconds="0.06" priority_2="5" priority_1="1">
+  <FindBugsSummary timestamp="Mon, 26 Oct 2015 00:21:09 +0900" total_classes="17" referenced_classes="104" total_bugs="6" total_size="873" num_packages="6" java_version="1.8.0_20" vm_version="25.20-b23" cpu_seconds="8.13" clock_seconds="2.82" peak_mbytes="228.49" alloc_mbytes="1749.50" gc_seconds="0.05" priority_2="5" priority_1="1">
     <PackageStats package="jp.co.dk.aspect" total_bugs="4" total_types="1" total_size="60" priority_2="4">
       <ClassStats class="jp.co.dk.aspect.MethodTrace" sourceFile="MethodTrace.aj" interface="false" size="60" bugs="4" priority_2="4"/>
     </PackageStats>
-    <PackageStats package="jp.co.dk.neo4jdatastoremanager" total_bugs="0" total_types="6" total_size="450">
-      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Neo4JDataStore" sourceFile="Neo4JDataStore.java" interface="false" size="84" bugs="0"/>
+    <PackageStats package="jp.co.dk.neo4jdatastoremanager" total_bugs="0" total_types="6" total_size="534">
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Neo4JDataStore" sourceFile="Neo4JDataStore.java" interface="false" size="102" bugs="0"/>
       <ClassStats class="jp.co.dk.neo4jdatastoremanager.Neo4JDataStoreManager" sourceFile="Neo4JDataStoreManager.java" interface="false" size="100" bugs="0"/>
       <ClassStats class="jp.co.dk.neo4jdatastoremanager.Neo4JDataStoreParameter" sourceFile="Neo4JDataStoreParameter.java" interface="false" size="89" bugs="0"/>
-      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Node" sourceFile="Node.java" interface="false" size="93" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Node" sourceFile="Node.java" interface="false" size="114" bugs="0"/>
       <ClassStats class="jp.co.dk.neo4jdatastoremanager.NodeSelector" sourceFile="NodeSelector.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Transaction" sourceFile="Transaction.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="jp.co.dk.neo4jdatastoremanager.Transaction" sourceFile="Transaction.java" interface="false" size="127" bugs="0"/>
     </PackageStats>
     <PackageStats package="jp.co.dk.neo4jdatastoremanager.cypher" total_bugs="1" total_types="5" total_size="181" priority_2="1">
       <ClassStats class="jp.co.dk.neo4jdatastoremanager.cypher.BooleanCypherParameter" sourceFile="BooleanCypherParameter.java" interface="false" size="25" bugs="0"/>
@@ -125,29 +125,32 @@
       <ClassStats class="jp.co.dk.neo4jdatastoremanager.property.Neo4JDataStoreManagerProperty" sourceFile="Neo4JDataStoreManagerProperty.java" interface="false" size="49" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="233" invocations="682" avgMicrosecondsPerInvocation="342" maxMicrosecondsPerInvocation="14948" standardDeviationMircosecondsPerInvocation="961"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="150" invocations="135" avgMicrosecondsPerInvocation="1111" maxMicrosecondsPerInvocation="22829" standardDeviationMircosecondsPerInvocation="2508"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="149" invocations="136" avgMicrosecondsPerInvocation="1098" maxMicrosecondsPerInvocation="19865" standardDeviationMircosecondsPerInvocation="2081"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="137" invocations="144" avgMicrosecondsPerInvocation="957" maxMicrosecondsPerInvocation="12817" standardDeviationMircosecondsPerInvocation="1887"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="132" invocations="104" avgMicrosecondsPerInvocation="1271" maxMicrosecondsPerInvocation="28903" standardDeviationMircosecondsPerInvocation="3835"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="106" invocations="138" avgMicrosecondsPerInvocation="771" maxMicrosecondsPerInvocation="8498" standardDeviationMircosecondsPerInvocation="1250"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="99" invocations="135" avgMicrosecondsPerInvocation="739" maxMicrosecondsPerInvocation="13331" standardDeviationMircosecondsPerInvocation="1670"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="93" invocations="395" avgMicrosecondsPerInvocation="236" maxMicrosecondsPerInvocation="10074" standardDeviationMircosecondsPerInvocation="705"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="90" invocations="136" avgMicrosecondsPerInvocation="666" maxMicrosecondsPerInvocation="7896" standardDeviationMircosecondsPerInvocation="1091"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="89" invocations="131" avgMicrosecondsPerInvocation="681" maxMicrosecondsPerInvocation="6819" standardDeviationMircosecondsPerInvocation="1082"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="80" invocations="104" avgMicrosecondsPerInvocation="777" maxMicrosecondsPerInvocation="12702" standardDeviationMircosecondsPerInvocation="2018"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="50" invocations="147" avgMicrosecondsPerInvocation="345" maxMicrosecondsPerInvocation="9436" standardDeviationMircosecondsPerInvocation="1127"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="50" invocations="642" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="4570" standardDeviationMircosecondsPerInvocation="259"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="49" invocations="136" avgMicrosecondsPerInvocation="364" maxMicrosecondsPerInvocation="9222" standardDeviationMircosecondsPerInvocation="1072"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="138" avgMicrosecondsPerInvocation="329" maxMicrosecondsPerInvocation="22557" standardDeviationMircosecondsPerInvocation="1945"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="42" invocations="686" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="3257" standardDeviationMircosecondsPerInvocation="184"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="37" invocations="104" avgMicrosecondsPerInvocation="357" maxMicrosecondsPerInvocation="6894" standardDeviationMircosecondsPerInvocation="998"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="35" invocations="17" avgMicrosecondsPerInvocation="2082" maxMicrosecondsPerInvocation="15292" standardDeviationMircosecondsPerInvocation="4171"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="34" invocations="104" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="7473" standardDeviationMircosecondsPerInvocation="1073"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="33" invocations="104" avgMicrosecondsPerInvocation="324" maxMicrosecondsPerInvocation="8713" standardDeviationMircosecondsPerInvocation="1144"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="33" invocations="17" avgMicrosecondsPerInvocation="1975" maxMicrosecondsPerInvocation="12546" standardDeviationMircosecondsPerInvocation="2918"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="33" invocations="104" avgMicrosecondsPerInvocation="321" maxMicrosecondsPerInvocation="5057" standardDeviationMircosecondsPerInvocation="821"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="29" invocations="104" avgMicrosecondsPerInvocation="280" maxMicrosecondsPerInvocation="4890" standardDeviationMircosecondsPerInvocation="815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="214" invocations="682" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="13645" standardDeviationMircosecondsPerInvocation="767"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="148" invocations="161" avgMicrosecondsPerInvocation="921" maxMicrosecondsPerInvocation="29190" standardDeviationMircosecondsPerInvocation="3311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="144" invocations="149" avgMicrosecondsPerInvocation="969" maxMicrosecondsPerInvocation="18214" standardDeviationMircosecondsPerInvocation="1688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="131" invocations="149" avgMicrosecondsPerInvocation="883" maxMicrosecondsPerInvocation="19371" standardDeviationMircosecondsPerInvocation="2367"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="130" invocations="155" avgMicrosecondsPerInvocation="839" maxMicrosecondsPerInvocation="15536" standardDeviationMircosecondsPerInvocation="1785"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="121" invocations="150" avgMicrosecondsPerInvocation="810" maxMicrosecondsPerInvocation="24967" standardDeviationMircosecondsPerInvocation="2182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="107" invocations="104" avgMicrosecondsPerInvocation="1029" maxMicrosecondsPerInvocation="19630" standardDeviationMircosecondsPerInvocation="2854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="88" invocations="413" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="3494" standardDeviationMircosecondsPerInvocation="400"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="88" invocations="104" avgMicrosecondsPerInvocation="849" maxMicrosecondsPerInvocation="27351" standardDeviationMircosecondsPerInvocation="2856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="82" invocations="150" avgMicrosecondsPerInvocation="547" maxMicrosecondsPerInvocation="7636" standardDeviationMircosecondsPerInvocation="924"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="67" invocations="686" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="8172" standardDeviationMircosecondsPerInvocation="454"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="62" invocations="145" avgMicrosecondsPerInvocation="430" maxMicrosecondsPerInvocation="5797" standardDeviationMircosecondsPerInvocation="669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="51" invocations="104" avgMicrosecondsPerInvocation="497" maxMicrosecondsPerInvocation="20151" standardDeviationMircosecondsPerInvocation="2067"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="50" invocations="642" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="2419" standardDeviationMircosecondsPerInvocation="199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="152" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="24222" standardDeviationMircosecondsPerInvocation="1969"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="45" invocations="17" avgMicrosecondsPerInvocation="2676" maxMicrosecondsPerInvocation="25661" standardDeviationMircosecondsPerInvocation="6030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="40" invocations="147" avgMicrosecondsPerInvocation="276" maxMicrosecondsPerInvocation="11198" standardDeviationMircosecondsPerInvocation="1013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="40" invocations="150" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="16179" standardDeviationMircosecondsPerInvocation="1327"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="35" invocations="104" avgMicrosecondsPerInvocation="340" maxMicrosecondsPerInvocation="9640" standardDeviationMircosecondsPerInvocation="1069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="32" invocations="17" avgMicrosecondsPerInvocation="1939" maxMicrosecondsPerInvocation="6985" standardDeviationMircosecondsPerInvocation="2115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="32" invocations="104" avgMicrosecondsPerInvocation="308" maxMicrosecondsPerInvocation="7086" standardDeviationMircosecondsPerInvocation="988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="29" invocations="17" avgMicrosecondsPerInvocation="1754" maxMicrosecondsPerInvocation="7706" standardDeviationMircosecondsPerInvocation="2138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="26" invocations="104" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="4409" standardDeviationMircosecondsPerInvocation="670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="25" invocations="104" avgMicrosecondsPerInvocation="249" maxMicrosecondsPerInvocation="4515" standardDeviationMircosecondsPerInvocation="719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="24" invocations="149" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="8935" standardDeviationMircosecondsPerInvocation="736"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="22" invocations="152" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="8191" standardDeviationMircosecondsPerInvocation="909"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
