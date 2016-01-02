@@ -7,6 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -181,6 +182,11 @@ public class Node {
 		return (Boolean)this.node.getProperty(key);
 	}
 	
+	/**
+	 * <p>このノードから指定のプロパティキーに紐づくObjectの値を取得します。</p>
+	 * @param key プロパティキー
+	 * @return 値
+	 */
 	public Object getPropertyObject(String key) throws Neo4JDataStoreManagerException {
 		try {
 			String value = (String) this.node.getProperty(key);
@@ -191,6 +197,17 @@ public class Node {
 		} catch (IOException | ClassNotFoundException e) {
 			throw new Neo4JDataStoreManagerException(PARAMETER_FAILED_TO_READ, key, e);
 		}
+	}
+	
+	/**
+	 * <p>このノードに設定されているすべてのプロパティを取得します。</p>
+	 * @return プロパティキーと値のマップオブジェクト
+	 */
+	public Map<String, String> getProperty() {
+		Map<String, String> propertyData = new HashMap<String, String>();
+		List<String> propertyKeys = this.getPropertyKeys();
+		for (String propertyKey : propertyKeys) propertyData.put(propertyKey, this.getPropertyString(propertyKey));
+		return propertyData;
 	}
 	
 	/**

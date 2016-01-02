@@ -161,7 +161,7 @@
 		■■     
 		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	 -->
-	<target name="jar" depends="aspectj_compile">
+	<target name="jar" depends="compile">
 	  	<delete dir="${jar.delete.dir}" />
 	  	<jar jarfile  = "${jar.jar.jarfile}"
 	         basedir  = "${jar.jar.basedir}" >
@@ -178,10 +178,44 @@
 		■■     
 		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	 -->
-	<target name="jar_all" depends="aspectj_compile">
+	<target name="jar_all" depends="compile">
 	  	<delete dir="${jar_all.delete.dir}" />
 	  	<jar jarfile  = "${jar_all.jar.jarfile}"
 	         basedir  = "${jar_all.jar.basedir}" >
+	  		<zipgroupfileset dir="${library.dir}" includes="*.jar"/>
+	  	</jar>
+	</target>
+
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] JAR(With Aspect-J)作成
+		■■     
+		■■     [説明] Aspect-JにてビルドしたクラスをJar形式でまとめます。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="jar_aspectj" depends="aspectj_compile">
+	  	<delete dir="${jar_aspectj.delete.dir}" />
+	  	<jar jarfile  = "${jar_aspectj.jar.jarfile}"
+	         basedir  = "${jar_aspectj.jar.basedir}" >
+	  	</jar>
+	</target>
+	
+	<!-- 
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+		■■     
+		■■     [概要] JAR(With Aspect-J)作成（lib含む）
+		■■     
+		■■     [説明] Aspect-JにてビルドしたクラスをJar形式でまとめます。
+		■■            作成されたJarにはビルドされたクラスファイルが依存しているすべてのjarが含まれます。
+		■■     
+		■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	 -->
+	<target name="jar_aspectj_all" depends="aspectj_compile">
+	  	<delete dir="${jar_aspectj_all.delete.dir}" />
+	  	<jar jarfile  = "${jar_aspectj_all.jar.jarfile}"
+	         basedir  = "${jar_aspectj_all.jar.basedir}" >
 	  		<zipgroupfileset dir="${library.dir}" includes="*.jar"/>
 	  	</jar>
 	</target>
@@ -410,17 +444,18 @@
 	<!--================================================-->
 	<target name="all">
 		<antcall target="jar"/>
-		<antcall target="test_jar"/>
 		<antcall target="jar_all"/>
+		<antcall target="jar_aspectj"/>
+		<antcall target="jar_aspectj_all"/>
+		<antcall target="test_jar"/>
 		<antcall target="test_jar_all"/>
 		<antcall target="doc"/>
-		<!-- <antcall target="doc_jar"/> -->
 		<antcall target="src_jar"/>
 		<antcall target="test_src_jar"/>
 		<antcall target="clean"/>
 		<antcall target="clean_doc"/>
 		<!-- <antcall target="test_execute"/> -->
-		<antcall target="findbugs_execute"/>
-		<antcall target="checkstyle_execute"/>
+		<!-- <antcall target="findbugs_execute"/> -->
+		<!-- <antcall target="checkstyle_execute"/> -->
 	</target>
 </project>
