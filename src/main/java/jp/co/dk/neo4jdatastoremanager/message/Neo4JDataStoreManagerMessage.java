@@ -39,6 +39,9 @@ public class Neo4JDataStoreManagerMessage extends AbstractMessage implements Ser
 	/** パラメータが不正です。KEY=[{0}],PARAMETER=[{1}] */
 	public static final Neo4JDataStoreManagerMessage PARAMETER_IS_FRAUD = new Neo4JDataStoreManagerMessage("E008");
 	
+	/** パラメータの読込に失敗しました。KEY=[{0}] */
+	public static final Neo4JDataStoreManagerMessage PARAMETER_FAILED_TO_READ = new Neo4JDataStoreManagerMessage("E008");
+	
 	protected Neo4JDataStoreManagerMessage(String messageId) {
 		super(messageId);
 	}

@@ -1,5 +1,11 @@
 package jp.co.dk.neo4jdatastoremanager;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -130,12 +136,71 @@ public class Node {
 	}
 	
 	/**
-	 * <p>このノードから指定のプロパティキーに紐づく値を取得します。</p>
+	 * <p>このノードに対して指定のプロパティを登録します。</p>
+	 * @param key プロパティキー
+	 * @param value プロパティ値
+	 * @throws Neo4JDataStoreManagerException 
+	 */
+	public void setProperty(String key, Serializable value) throws Neo4JDataStoreManagerException {
+		try {
+			ByteArrayOutputStream baos = new ByteArrayOutputStream();
+			ObjectOutputStream    oos  = new ObjectOutputStream(baos);
+			oos.writeObject(value);
+			oos.close();
+			baos.close();
+			this.node.setProperty(key, new String(baos.toByteArray()));
+		} catch (IOException e) {
+			throw new Neo4JDataStoreManagerException(PARAMETER_IS_FRAUD, key, value.toString());
+		}
+	}
+	
+	/**
+	 * <p>このノードから指定のプロパティキーに紐づくString値を取得します。</p>
 	 * @param key プロパティキー
 	 * @return 値
 	 */
-	public String getProperty(String key) {
+	public String getPropertyString(String key) {
 		return (String)this.node.getProperty(key);
+	}
+	
+	/**
+	 * <p>このノードから指定のプロパティキーに紐づくInteger値を取得します。</p>
+	 * @param key プロパティキー
+	 * @return 値
+	 */
+	public Integer getPropertyInteger(String key) {
+		return (Integer)this.node.getProperty(key);
+	}
+	
+	/**
+	 * <p>このノードから指定のプロパティキーに紐づくBoolean値を取得します。</p>
+	 * @param key プロパティキー
+	 * @return 値
+	 */
+	public Boolean getPropertyBoolean(String key) {
+		return (Boolean)this.node.getProperty(key);
+	}
+	
+	public Object getPropertyObject(String key) throws Neo4JDataStoreManagerException {
+		try {
+			String value = (String) this.node.getProperty(key);
+			byte[] data = value.getBytes();
+			ByteArrayInputStream bis = new ByteArrayInputStream(data);
+			ObjectInputStream ois = new ObjectInputStream(bis);
+			return ois.readObject();
+		} catch (IOException | ClassNotFoundException e) {
+			throw new Neo4JDataStoreManagerException(PARAMETER_FAILED_TO_READ, key, e);
+		}
+	}
+	
+	/**
+	 * <p>このノードから指定のプロパティキーの一覧を取得します。</p>
+	 * @return プロパティキー一覧
+	 */
+	public List<String> getPropertyKeys() {
+		List<String> keyList = new ArrayList<String>();
+		for (String key : this.node.getPropertyKeys()) keyList.add(key);
+		return keyList;
 	}
 	
 	/**
