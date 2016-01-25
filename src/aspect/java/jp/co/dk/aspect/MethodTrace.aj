@@ -2,34 +2,41 @@ package jp.co.dk.aspect;
 
 public aspect MethodTrace {
 	
+	protected java.util.Stack<Long> timeStack = new java.util.Stack<Long>();
+	
 	protected jp.co.dk.logger.Logger logger = jp.co.dk.logger.LoggerFactory.getLogger(this.getClass());
 	
-	protected static int nestlevel = -1;
+	protected int nestlevel = -1;
 	
 	pointcut methodTrace(): execution(* *.*(..)) && !execution(* *.toString()) && !execution(* *.hashCode()) ;
 	
 	before(): methodTrace() {
 		nestlevel++;
 		StringBuilder head = new StringBuilder();
-		for (int i=0; i<nestlevel; i++)head.append("┃");
+		for (int i=0; i<nestlevel; i++)head.append("|       ");
 		org.aspectj.lang.Signature sig = thisJoinPoint.getSignature();
 		
-	    logger.trace(head.toString() + "┏METHOD[START]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-	    logger.trace(head.toString() + "┃class_name  :" + sig.getDeclaringType().getName());
-	    logger.trace(head.toString() + "┃method_name :" + sig.getName());
+		StringBuilder traceStr = new StringBuilder(head);
+		traceStr.append("[START] ").append(sig.getDeclaringType().getName()).append('#').append(sig.getName());
+		
 	    if (thisJoinPoint.getArgs().length == 0) {
-	    	logger.trace(head.toString() + "┃parametar  :nothing");
+	    	traceStr.append("()");
 	    } else {
-		    int index=1;
-		    for (Object arg : thisJoinPoint.getArgs()) {
+	    	traceStr.append("(");
+	    	for (Object arg : thisJoinPoint.getArgs()) {
 		    	if (arg != null) {
-		    		logger.trace(head.toString() + "┃parametar [" + index + "]:" + arg.toString() + "(" + arg.getClass().getName() + ")");
+		    		traceStr.append(arg.toString() + "(" + arg.getClass().getName() + ")");
 		    	} else {
-		    		logger.trace(head.toString() + "┃parametar [" + index + "]: is null");
+		    		traceStr.append("null");
 		    	}
-		    	index++;
+		    	traceStr.append(",");
 		    }
+		    traceStr.append(")");
 	    }
+	    logger.trace(traceStr.toString());
+	    
+	    // ログ出力処理を開始後、メソッドの開始時刻を保存する。
+	    timeStack.add(new Long(new java.util.Date().getTime()));
 	}
 	
 	after(): methodTrace() {
@@ -37,30 +44,38 @@ public aspect MethodTrace {
 	}
 	
 	after() returning(Object o): methodTrace() {
-		StringBuilder head = new StringBuilder();
-		for (int i=0; i<nestlevel; i++)head.append("┃");
 		
-		org.aspectj.lang.Signature sig = thisJoinPoint.getSignature();
-		logger.trace(head.toString() + "┃===Return Infomation===");
+		StringBuilder head = new StringBuilder();
+		for (int i=0; i<nestlevel; i++)head.append("|       ");
+		
+		// org.aspectj.lang.Signature sig = thisJoinPoint.getSignature();
+		
+		StringBuilder traceStr = new StringBuilder(head);
+		traceStr.append("[ FIN ] SUCCESS( ").append(new java.util.Date().getTime() - timeStack.pop().longValue()).append(" msec )");
+		
 		if (o == null) {
-			logger.trace(head.toString() + "┃return: is null");
+			traceStr.append("return: null");
 		} else { 
-			logger.trace(head.toString() + "┃return: " + o.toString());
+			traceStr.append("return: " + o.toString() + "(" + o.getClass().getName() + ")");
 		}
-        logger.trace(head.toString() + "┗METHOD[ FIN ]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        logger.trace(head.toString());
+		logger.trace(traceStr.toString());
         nestlevel--;
     }
 
     after() throwing(Exception e): methodTrace() {
+    	
     	StringBuilder head = new StringBuilder();
-		for (int i=0; i<nestlevel; i++)head.append("┃");
+		for (int i=0; i<nestlevel; i++)head.append("|       ");
 		
-    	org.aspectj.lang.Signature sig = thisJoinPoint.getSignature();
-    	logger.trace(head.toString() + "┃===Throw Infomation===");
-        logger.trace(head.toString() + "┃throw: " + e.toString());
-        logger.trace(head.toString() + "┗METHOD[ FIN ]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        logger.trace(head.toString());
+        StringBuilder traceStr = new StringBuilder(head);
+		traceStr.append("[ FIN ] ERROR( ").append(new java.util.Date().getTime() - timeStack.pop().longValue()).append(" msec )");
+		
+		if (e == null) {
+			traceStr.append("throw: null");
+		} else { 
+			traceStr.append("throw: " + e.toString());
+		}
+		logger.trace(traceStr.toString());
         nestlevel--;
     }
 
