@@ -45,6 +45,25 @@ public class Node {
 	
 	/**
 	 * <p>このノードから外向きに関連するノードで指定の条件に合致するノードを取得する。</p>
+	 * 合致するノードが存在しなかった場合、nullを返却する。
+	 * @param selector 指定の条件を定義したオブジェクト
+	 * @return この条件に合致したノード
+	 */
+	public Node getOutGoingNode(NodeSelector selector) {
+		Iterator<Relationship> relationshipList = this.node.getRelationships(Direction.OUTGOING).iterator();
+		while (relationshipList.hasNext()) {
+			Relationship relationship = relationshipList.next();
+			org.neo4j.graphdb.Node node = relationship.getEndNode();
+			if (selector.isSelect(node)) {
+				return new Node(node);
+			}
+		}
+		return null;
+	}
+	
+	/**
+	 * <p>このノードから外向きに関連するノードで指定の条件に合致するノードを取得する。</p>
+	 * 合致するノードが存在しなかった場合、空の一覧を返却する。
 	 * @param selector 指定の条件を定義したオブジェクト
 	 * @return この条件に合致したノード一覧
 	 */
@@ -111,6 +130,7 @@ public class Node {
 	
 	/**
 	 * <p>このノードに対して指定のプロパティを登録します。</p>
+	 * 合致するノードが存在しなかった場合、空の一覧を返却する。
 	 * @param key プロパティキー
 	 * @param value プロパティ値
 	 */
