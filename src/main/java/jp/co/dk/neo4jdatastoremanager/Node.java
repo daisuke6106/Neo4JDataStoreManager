@@ -11,10 +11,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.StringJoiner;
 
 import jp.co.dk.neo4jdatastoremanager.exception.Neo4JDataStoreManagerException;
 
 import org.neo4j.graphdb.Direction;
+import org.neo4j.graphdb.Label;
 import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.RelationshipType;
 
@@ -92,6 +94,16 @@ public class Node {
 			nodeList.add(new Node(relationship.getEndNode()));
 		}
 		return nodeList;
+	}
+	
+	/**
+	 * このノードのラベルを取得する。
+	 * @return ラベル一覧
+	 */
+	public List<org.neo4j.graphdb.Label> getLabel() {
+		List<org.neo4j.graphdb.Label> labelList = new ArrayList<org.neo4j.graphdb.Label>();
+		this.node.getLabels().forEach(label->labelList.add(label));
+		return labelList;
 	}
 	
 	/**
@@ -328,9 +340,9 @@ public class Node {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("NODE [ID=");
-		builder.append(id);
-		builder.append("]");
+		builder.append("NODE@").append(id);
+		StringJoiner labelJoiner = new StringJoiner(" ", "(", ")");this.getLabel().forEach(label->labelJoiner.add(label.toString()));builder.append(labelJoiner);
+		// StringJoiner propJoiner  = new StringJoiner(",", "{", "}");this.getProperty().forEach((key, value)->propJoiner.add(key + ":" + value));builder.append(propJoiner);
 		return builder.toString();
 	}
 	
