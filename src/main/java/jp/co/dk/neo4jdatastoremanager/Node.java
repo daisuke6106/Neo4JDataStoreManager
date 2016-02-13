@@ -235,10 +235,19 @@ public class Node {
 	 * <p>このノードに設定されているすべてのプロパティを取得します。</p>
 	 * @return プロパティキーと値のマップオブジェクト
 	 */
-	public Map<String, String> getProperty() {
-		Map<String, String> propertyData = new HashMap<String, String>();
+	public Map<String, Object> getProperty() {
+		Map<String, Object> propertyData = new HashMap<String, Object>();
 		List<String> propertyKeys = this.getPropertyKeys();
-		for (String propertyKey : propertyKeys) propertyData.put(propertyKey, this.getPropertyString(propertyKey));
+		for (String propertyKey : propertyKeys) {
+			Object value = this.node.getProperty(propertyKey);
+			if (value instanceof String) {
+				propertyData.put(propertyKey, (String)value);
+			} else if (value instanceof Integer) {
+				propertyData.put(propertyKey, (Integer)value);
+			} else if (value instanceof Boolean) {
+				propertyData.put(propertyKey, (Boolean)value);
+			}
+		}
 		return propertyData;
 	}
 	
@@ -341,8 +350,16 @@ public class Node {
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("NODE@").append(id);
-		StringJoiner labelJoiner = new StringJoiner(" ", "(", ")");this.getLabel().forEach(label->labelJoiner.add(label.toString()));builder.append(labelJoiner);
-		// StringJoiner propJoiner  = new StringJoiner(",", "{", "}");this.getProperty().forEach((key, value)->propJoiner.add(key + ":" + value));builder.append(propJoiner);
+		StringJoiner labelJoiner = new StringJoiner(" ", "(", ")");this.getLabel().forEach(label->labelJoiner.add(label.toString()));
+		builder.append(labelJoiner);
+		StringJoiner propJoiner  = new StringJoiner(",", "{", "}");
+		for (Map.Entry<String, Object> property : this.getProperty().entrySet()) {
+			String key   = property.getKey();
+			String value = property.getValue().toString();
+			if (value.length() > 50) value = value.substring(50) + "...";
+			propJoiner.add(key + ":" + value);
+		}
+		builder.append(propJoiner);
 		return builder.toString();
 	}
 	
